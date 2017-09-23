@@ -12,7 +12,7 @@
 
 ![](image/Network4.png)
 
-#### Hidden 1 Layer
+### Hidden 1 Layer
 그럼, Input Layer에서 Hidden 1 Layer로 가는 연산 먼저 구현해보자. 입력 노드가 2개, 은닉 1층의 노드가 3개이므로, 가중치의 모양은 ![](https://latex.codecogs.com/png.latex?%282%20%5Ctimes%203%2)) 행렬이다. 여기에, Bias는 그저 원소간 덧셈을 수행을 하는 역할이므로, 은닉 1층의 노드 개수에 따라 크기는 3이다. 여기서 알 수 있는 사실은, Bias의 크기는 다음 Layer의 모양과 크기에 맞춰주면 된다는 것이다.
 
 이제 이를 실제로 구현해 보자.
@@ -51,7 +51,7 @@ print(layer1)
 
 이로써 은닉 1층이 완성되었다.
 
-#### Hidden 2 Layer
+### Hidden 2 Layer
 
 은닉 2층은, 은닉 1층의 노드 3개의 출력을 입력으로 받는다.
 그러므로 가중치 행렬은 ![](https://latex.codecogs.com/png.latex?%283%20%5Ctimes%203%29) 크기이고, Bias도 3 크기이다. 은닉 1층과 같이 활성화 함수로 Sigmoid를 사용하여 2층을 구현해보자.
@@ -68,7 +68,7 @@ print(layer2)
 [ 1.37784916  1.08678317  1.01993208]
 ```
 
-#### Output Layer
+### Output Layer
 
 이제 출력층을 구현해보자. 출력층으로 들어오는 입력이 3개이고 출력층의 노드는 2개이니, Weight는 ![](https://latex.codecogs.com/png.latex?%283%20%5Ctimes%202%29) 크기이고, bias는 2 크기이다. 출력층에서 활성화 함수는 따로 사용되지 않고, 항등 함수를 사용한다.
 ```
