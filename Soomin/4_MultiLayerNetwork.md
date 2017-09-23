@@ -1,21 +1,21 @@
-# Çà·Ä°öÀ» ÀÌ¿ëÇÑ ´ÙÃþ ½Å°æ¸Á
+# í–‰ë ¬ê³±ì„ ì´ìš©í•œ ë‹¤ì¸µ ì‹ ê²½ë§
 
 ![](image/Network2.png)
 
-ÀÌ ÇüÅÂÀÇ ´ÙÃþ ½Å°æ¸ÁÀ» ±¸ÇöÇØ º¸ÀÚ.
+ì´ í˜•íƒœì˜ ë‹¤ì¸µ ì‹ ê²½ë§ì„ êµ¬í˜„í•´ ë³´ìž.
 
-ÀÌ¹ø ½Å°æ¸Á¿¡´Â, ÆíÇâ(Bias)µµ Ãß°¡ÇØ º¸ÀÚ.
+ì´ë²ˆ ì‹ ê²½ë§ì—ëŠ”, íŽ¸í–¥(Bias)ë„ ì¶”ê°€í•´ ë³´ìž.
 
 ![](image/Network3.png)
 
-ÆíÇâÀº ÀÔ·Â Ãþ »Ó¸¸ÀÌ ¾Æ´Ï¶ó, ¸ðµç Àº´ÐÃþ¿¡ ÇÊ¿äÇÏ´Ù.
+íŽ¸í–¥ì€ ìž…ë ¥ ì¸µ ë¿ë§Œì´ ì•„ë‹ˆë¼, ëª¨ë“  ì€ë‹‰ì¸µì— í•„ìš”í•˜ë‹¤.
 
 ![](image/Network4.png)
 
-##### Hidden 1 Layer
-±×·³, Input Layer¿¡¼­ Hidden 1 Layer·Î °¡´Â ¿¬»ê ¸ÕÀú ±¸ÇöÇØº¸ÀÚ. ÀÔ·Â ³ëµå°¡ 2°³, Àº´Ð 1ÃþÀÇ ³ëµå°¡ 3°³ÀÌ¹Ç·Î, °¡ÁßÄ¡ÀÇ ¸ð¾çÀº ![](https://latex.codecogs.com/png.latex?%282%20%5Ctimes%203%2)) Çà·ÄÀÌ´Ù. ¿©±â¿¡, Bias´Â ±×Àú ¿ø¼Ò°£ µ¡¼ÀÀ» ¼öÇàÀ» ÇÏ´Â ¿ªÇÒÀÌ¹Ç·Î, Àº´Ð 1ÃþÀÇ ³ëµå °³¼ö¿¡ µû¶ó Å©±â´Â 3ÀÌ´Ù. ¿©±â¼­ ¾Ë ¼ö ÀÖ´Â »ç½ÇÀº, BiasÀÇ Å©±â´Â ´ÙÀ½ LayerÀÇ ¸ð¾ç°ú Å©±â¿¡ ¸ÂÃçÁÖ¸é µÈ´Ù´Â °ÍÀÌ´Ù.
+#### Hidden 1 Layer
+ê·¸ëŸ¼, Input Layerì—ì„œ Hidden 1 Layerë¡œ ê°€ëŠ” ì—°ì‚° ë¨¼ì € êµ¬í˜„í•´ë³´ìž. ìž…ë ¥ ë…¸ë“œê°€ 2ê°œ, ì€ë‹‰ 1ì¸µì˜ ë…¸ë“œê°€ 3ê°œì´ë¯€ë¡œ, ê°€ì¤‘ì¹˜ì˜ ëª¨ì–‘ì€ ![](https://latex.codecogs.com/png.latex?%282%20%5Ctimes%203%2)) í–‰ë ¬ì´ë‹¤. ì—¬ê¸°ì—, BiasëŠ” ê·¸ì € ì›ì†Œê°„ ë§ì…ˆì„ ìˆ˜í–‰ì„ í•˜ëŠ” ì—­í• ì´ë¯€ë¡œ, ì€ë‹‰ 1ì¸µì˜ ë…¸ë“œ ê°œìˆ˜ì— ë”°ë¼ í¬ê¸°ëŠ” 3ì´ë‹¤. ì—¬ê¸°ì„œ ì•Œ ìˆ˜ ìžˆëŠ” ì‚¬ì‹¤ì€, Biasì˜ í¬ê¸°ëŠ” ë‹¤ìŒ Layerì˜ ëª¨ì–‘ê³¼ í¬ê¸°ì— ë§žì¶°ì£¼ë©´ ëœë‹¤ëŠ” ê²ƒì´ë‹¤.
 
-ÀÌÁ¦ ÀÌ¸¦ ½ÇÁ¦·Î ±¸ÇöÇØ º¸ÀÚ.
+ì´ì œ ì´ë¥¼ ì‹¤ì œë¡œ êµ¬í˜„í•´ ë³´ìž.
 
 ```
 import numpy as np
@@ -28,12 +28,12 @@ layer1 = np.dot(X, W1) + b1
 print(layer1)
 ```
 
-°á°ú´Â ´ç¿¬È÷ Bias°¡ Àß Àû¿ëµÇ¾î ³ª¿Â´Ù.
+ê²°ê³¼ëŠ” ë‹¹ì—°ížˆ Biasê°€ ìž˜ ì ìš©ë˜ì–´ ë‚˜ì˜¨ë‹¤.
 ```
 [ 0.23  0.49  0.75]
 ```
 
-ÇÏ³ª ÀØÀº °ÍÀÌ ÀÖ´Âµ¥, ´ÙÃþ ½Å°æ¸ÁÀ» ±¸¼ºÇÒ ¶§¿¡´Â È°¼ºÈ­ ÇÔ¼öÀÇ ¼±ÅÃÀÌ Áß¿äÇÏ´Ù. ÀÌ¹ø ±¸Çö¿¡´Â Sigmoid ÇÔ¼ö¸¦ »ç¿ëÇÏµµ·Ï ÇÏ°Ú´Ù. Sigmoid ÇÔ¼ö¸¦ ±¸ÇöÇÑ ´ÙÀ½, ·¹ÀÌ¾î¿¡ Àû¿ë½ÃÄÑ ÁØ´Ù.
+í•˜ë‚˜ ìžŠì€ ê²ƒì´ ìžˆëŠ”ë°, ë‹¤ì¸µ ì‹ ê²½ë§ì„ êµ¬ì„±í•  ë•Œì—ëŠ” í™œì„±í™” í•¨ìˆ˜ì˜ ì„ íƒì´ ì¤‘ìš”í•˜ë‹¤. ì´ë²ˆ êµ¬í˜„ì—ëŠ” Sigmoid í•¨ìˆ˜ë¥¼ ì‚¬ìš©í•˜ë„ë¡ í•˜ê² ë‹¤. Sigmoid í•¨ìˆ˜ë¥¼ êµ¬í˜„í•œ ë‹¤ìŒ, ë ˆì´ì–´ì— ì ìš©ì‹œì¼œ ì¤€ë‹¤.
 
 ```
 def sigmoid(x):
@@ -44,17 +44,17 @@ layer1 = sigmoid(np.dot(X, W1) + b1)
 print(layer1)
 ```
 
-°á°ú´Â Sigmoid ÇÔ¼ö°¡ Àû¿ëµÈ ÇüÅÂ·Î ³ªÅ¸³­´Ù.
+ê²°ê³¼ëŠ” Sigmoid í•¨ìˆ˜ê°€ ì ìš©ëœ í˜•íƒœë¡œ ë‚˜íƒ€ë‚œë‹¤.
 ```
 [ 1.74081822  1.4965853   1.33287108]
 ```
 
-ÀÌ·Î½á Àº´Ð 1ÃþÀÌ ¿Ï¼ºµÇ¾ú´Ù.
+ì´ë¡œì¨ ì€ë‹‰ 1ì¸µì´ ì™„ì„±ë˜ì—ˆë‹¤.
 
-##### Hidden 2 Layer
+#### Hidden 2 Layer
 
-Àº´Ð 2ÃþÀº, Àº´Ð 1ÃþÀÇ ³ëµå 3°³ÀÇ Ãâ·ÂÀ» ÀÔ·ÂÀ¸·Î ¹Þ´Â´Ù.
-±×·¯¹Ç·Î °¡ÁßÄ¡ Çà·ÄÀº ![](https://latex.codecogs.com/png.latex?%283%20%5Ctimes%203%29) Å©±âÀÌ°í, Biasµµ 3 Å©±âÀÌ´Ù. Àº´Ð 1Ãþ°ú °°ÀÌ È°¼ºÈ­ ÇÔ¼ö·Î Sigmoid¸¦ »ç¿ëÇÏ¿© 2ÃþÀ» ±¸ÇöÇØº¸ÀÚ.
+ì€ë‹‰ 2ì¸µì€, ì€ë‹‰ 1ì¸µì˜ ë…¸ë“œ 3ê°œì˜ ì¶œë ¥ì„ ìž…ë ¥ìœ¼ë¡œ ë°›ëŠ”ë‹¤.
+ê·¸ëŸ¬ë¯€ë¡œ ê°€ì¤‘ì¹˜ í–‰ë ¬ì€ ![](https://latex.codecogs.com/png.latex?%283%20%5Ctimes%203%29) í¬ê¸°ì´ê³ , Biasë„ 3 í¬ê¸°ì´ë‹¤. ì€ë‹‰ 1ì¸µê³¼ ê°™ì´ í™œì„±í™” í•¨ìˆ˜ë¡œ Sigmoidë¥¼ ì‚¬ìš©í•˜ì—¬ 2ì¸µì„ êµ¬í˜„í•´ë³´ìž.
 ```
 W2 = np.array([[0.1, 0.4, 0.7], [0.2, 0.5, 0.8], [0.3, 0.6, 0.9]])
 b2 = np.array([0.1, 0.2, 0.3])
@@ -63,14 +63,14 @@ layer2 = sigmoid(np.dot(layer1, W2) + b2)
 print(layer2)
 ```
 
-2ÃþÀÇ Ãâ·Â °á°ú´Â ´ÙÀ½°ú °°´Ù.
+2ì¸µì˜ ì¶œë ¥ ê²°ê³¼ëŠ” ë‹¤ìŒê³¼ ê°™ë‹¤.
 ```
 [ 1.37784916  1.08678317  1.01993208]
 ```
 
-##### Output Layer
+#### Output Layer
 
-ÀÌÁ¦ Ãâ·ÂÃþÀ» ±¸ÇöÇØº¸ÀÚ. Ãâ·ÂÃþÀ¸·Î µé¾î¿À´Â ÀÔ·ÂÀÌ 3°³ÀÌ°í Ãâ·ÂÃþÀÇ ³ëµå´Â 2°³ÀÌ´Ï, Weight´Â ![](https://latex.codecogs.com/png.latex?%283%20%5Ctimes%202%29) Å©±âÀÌ°í, bias´Â 2 Å©±âÀÌ´Ù. Ãâ·ÂÃþ¿¡¼­ È°¼ºÈ­ ÇÔ¼ö´Â µû·Î »ç¿ëµÇÁö ¾Ê°í, Ç×µî ÇÔ¼ö¸¦ »ç¿ëÇÑ´Ù.
+ì´ì œ ì¶œë ¥ì¸µì„ êµ¬í˜„í•´ë³´ìž. ì¶œë ¥ì¸µìœ¼ë¡œ ë“¤ì–´ì˜¤ëŠ” ìž…ë ¥ì´ 3ê°œì´ê³  ì¶œë ¥ì¸µì˜ ë…¸ë“œëŠ” 2ê°œì´ë‹ˆ, WeightëŠ” ![](https://latex.codecogs.com/png.latex?%283%20%5Ctimes%202%29) í¬ê¸°ì´ê³ , biasëŠ” 2 í¬ê¸°ì´ë‹¤. ì¶œë ¥ì¸µì—ì„œ í™œì„±í™” í•¨ìˆ˜ëŠ” ë”°ë¡œ ì‚¬ìš©ë˜ì§€ ì•Šê³ , í•­ë“± í•¨ìˆ˜ë¥¼ ì‚¬ìš©í•œë‹¤.
 ```
 W3 = np.array([[0.1, 0.4], [0.2, 0.5], [0.3, 0.6]])
 b3 = np.array([0.1, 0.2])
@@ -78,8 +78,8 @@ output = np.dot(layer2, W3) + b3
 
 print(output)
 ```
-½Å°æ¸ÁÀÇ Ãâ·Â °á°ú´Â ´ÙÀ½°ú °°´Ù.
+ì‹ ê²½ë§ì˜ ì¶œë ¥ ê²°ê³¼ëŠ” ë‹¤ìŒê³¼ ê°™ë‹¤.
 ```
 [ 0.76112117  1.90649049]
 ```
-ÀÌ·Î½á Ã³À½ ¼³°èÇÑ ½Å°æ¸ÁÀÇ ±¸ÇöÀÌ ¿Ï·áµÇ¾ú´Ù. ÀÌ ½Å°æ¸Á¿¡¼­´Â Weight¿Í Bias ½ÅÈ£°¡ µÚ¿¡¼­ ¾ÕÀ¸·Î(forward) ÀüÆÄ(propagation)µÈ´Ù.
+ì´ë¡œì¨ ì²˜ìŒ ì„¤ê³„í•œ ì‹ ê²½ë§ì˜ êµ¬í˜„ì´ ì™„ë£Œë˜ì—ˆë‹¤. ì´ ì‹ ê²½ë§ì—ì„œëŠ” Weightì™€ Bias ì‹ í˜¸ê°€ ë’¤ì—ì„œ ì•žìœ¼ë¡œ(forward) ì „íŒŒ(propagation)ëœë‹¤.
