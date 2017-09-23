@@ -27,7 +27,7 @@ print(softmax(X))
 ![](https://latex.codecogs.com/gif.latex?y_k%20%3D%20%5Cfrac%7Be%5E%7Ba_k-a_%7Bmax%7D%7D%7D%7B%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20e%5E%7Ba_i-a_%7Bmax%7D%7D%7D)
 ```
 def softmax(X):
-	x_exp = X-np.max(X)
+    x_exp = X-np.max(X)
     return np.array(np.exp(x_exp)/(np.sum(np.exp(x_exp))))
 ```
 
