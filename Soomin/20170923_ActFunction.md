@@ -4,7 +4,7 @@
 
 신경망이란, 하나의 입력 층, 여러 은닉 층, 하나의 출력 층으로 이루어진 퍼셉트론들의 네트워크를 말한다. 전형적인 신경망의 형태는 다음과 같다.
 
-![eq](https://github.com/NoNamedSelfDriveing/DeepLearningStudy/blob/master/Soomin/image/Network.png)
+![eq](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/image/Network.png)
 
 ### 활성화 함수
 
