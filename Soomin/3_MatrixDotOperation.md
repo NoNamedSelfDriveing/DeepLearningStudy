@@ -1,12 +1,12 @@
-# Çà·Ä°ö°ú ½Å°æ¸Á
+# í–‰ë ¬ê³±ê³¼ ì‹ ê²½ë§
 
-´ÙÀ½°ú °°Àº ½Å°æ¸ÁÀÌ ÀÖ´Ù°í °¡Á¤ÇÏÀÚ.
+ë‹¤ìŒê³¼ ê°™ì€ ì‹ ê²½ë§ì´ ìˆë‹¤ê³  ê°€ì •í•˜ì.
 
 ![](image/Weight_Neural.png)
 
-ÀÌ ½Å°æ¸Á ±×·¡ÇÁ¿¡¼­, °£¼±ÀÇ ¼öÄ¡´Â Weight(°¡ÁßÄ¡)¸¦ ÀÇ¹ÌÇÑ´Ù. ÀÔ·ÂÀÌ 2°³, Ãâ·ÂÃş ³ëµå°¡ 3°³ÀÎ ³×Æ®¿öÅ©ÀÌ¹Ç·Î, À§ÀÇ »çÁø¿¡¼­ º¸ÀÌµíÀÌ Weight´Â ÃÑ 6°³ÀÇ °ªÀÌ Á¸ÀçÇÏ°Ô µÈ´Ù.
+ì´ ì‹ ê²½ë§ ê·¸ë˜í”„ì—ì„œ, ê°„ì„ ì˜ ìˆ˜ì¹˜ëŠ” Weight(ê°€ì¤‘ì¹˜)ë¥¼ ì˜ë¯¸í•œë‹¤. ì…ë ¥ì´ 2ê°œ, ì¶œë ¥ì¸µ ë…¸ë“œê°€ 3ê°œì¸ ë„¤íŠ¸ì›Œí¬ì´ë¯€ë¡œ, ìœ„ì˜ ì‚¬ì§„ì—ì„œ ë³´ì´ë“¯ì´ WeightëŠ” ì´ 6ê°œì˜ ê°’ì´ ì¡´ì¬í•˜ê²Œ ëœë‹¤.
 
-ÀÌ¸¦ Áö±İ±îÁö ±¸ÇöÇØ¿Ô´ø ÆÛ¼ÁÆ®·ĞÀÇ ÇüÅÂ·Î ±¸ÇöÇØº¸ÀÚ.
+ì´ë¥¼ ì§€ê¸ˆê¹Œì§€ êµ¬í˜„í•´ì™”ë˜ í¼ì…‰íŠ¸ë¡ ì˜ í˜•íƒœë¡œ êµ¬í˜„í•´ë³´ì.
 
 ```
 def pctn(x1, x2):
@@ -18,19 +18,19 @@ def pctn(x1, x2):
 print(pctn(3, 5))
 ```
 
-°á°ú´Â ´ÙÀ½°ú °°ÀÌ, ¼¼ °³ÀÇ ³ëµå Ãâ·ÂÀ» Àß º¸¿©ÁÖ°í ÀÖ´Â °ÍÀ» º¼ ¼ö ÀÖ´Ù.
+ê²°ê³¼ëŠ” ë‹¤ìŒê³¼ ê°™ì´, ì„¸ ê°œì˜ ë…¸ë“œ ì¶œë ¥ì„ ì˜ ë³´ì—¬ì£¼ê³  ìˆëŠ” ê²ƒì„ ë³¼ ìˆ˜ ìˆë‹¤.
 
 ```
 (13, 29, 45)
 ```
 
-ÇÏÁö¸¸ ÀÌ·¸°Ô Á÷Á¢ ±¸ÇöÀ» ÇÏ°Ô µÇ¸é, ³ëµå°¡ ¸¹¾ÆÁö°í ·¹ÀÌ¾î°¡ ±í¾îÁö¸é ÄÚµåÀÇ ±æÀÌ°¡ ±âÇÏ±Ş¼öÀûÀ¸·Î ´Ã¾î³¯ °ÍÀÌ´Ù. ±×·¯³ª Çà·Ä·Î ÀÌ ¿¬»êÀ» °£´ÜÈ÷ ±¸ÇöÇÒ ¼ö ÀÖ´Ù.
+í•˜ì§€ë§Œ ì´ë ‡ê²Œ ì§ì ‘ êµ¬í˜„ì„ í•˜ê²Œ ë˜ë©´, ë…¸ë“œê°€ ë§ì•„ì§€ê³  ë ˆì´ì–´ê°€ ê¹Šì–´ì§€ë©´ ì½”ë“œì˜ ê¸¸ì´ê°€ ê¸°í•˜ê¸‰ìˆ˜ì ìœ¼ë¡œ ëŠ˜ì–´ë‚  ê²ƒì´ë‹¤. ê·¸ëŸ¬ë‚˜ í–‰ë ¬ë¡œ ì´ ì—°ì‚°ì„ ê°„ë‹¨íˆ êµ¬í˜„í•  ìˆ˜ ìˆë‹¤.
 
-ÀÔ·Â Çà·Ä ![eq](https://latex.codecogs.com/png.latex?X%20%3D%20%5Cbegin%7Bpmatrix%7D%20x_1%20%5C%20x_2%20%5Cend%7Bpmatrix%7D) ¿Í °¡ÁßÄ¡ Çà·Ä ![eq](https://latex.codecogs.com/png.latex?X%20%3D%20%5Cbegin%7Bpmatrix%7D%20w_1_1%20%5C%20w_2_1%20%5C%20w_3_1%20%5C%5C%20w_1_2%20%5C%20w_2_2%20%5C%20w_3_2%20%5Cend%7Bpmatrix%7D) À» °öÇÏ¿© Ãâ·Â ![eq](https://latex.codecogs.com/png.latex?Y%20%3D%20%5Cbegin%7Bpmatrix%7D%20y_1%20%5C%20y_2%20%5C%20y_3%20%5Cend%7Bpmatrix%7D) À» ¾òÀ» ¼ö ÀÖ´Ù. Çà·Ä °ö¼À¿¡ °üÇÑ ÀÚ¼¼ÇÑ ³»¿ëÀº ÀÌ ![¸µÅ©](https://ko.wikipedia.org/wiki/%ED%96%89%EB%A0%AC_%EA%B3%B1%EC%85%88) ¸¦ ÂüÁ¶ÇÏÀÚ.
+ì…ë ¥ í–‰ë ¬ ![eq](https://latex.codecogs.com/png.latex?X%20%3D%20%5Cbegin%7Bpmatrix%7D%20x_1%20%5C%20x_2%20%5Cend%7Bpmatrix%7D) ì™€ ê°€ì¤‘ì¹˜ í–‰ë ¬ ![eq](https://latex.codecogs.com/png.latex?X%20%3D%20%5Cbegin%7Bpmatrix%7D%20w_1_1%20%5C%20w_2_1%20%5C%20w_3_1%20%5C%5C%20w_1_2%20%5C%20w_2_2%20%5C%20w_3_2%20%5Cend%7Bpmatrix%7D) ì„ ê³±í•˜ì—¬ ì¶œë ¥ ![eq](https://latex.codecogs.com/png.latex?Y%20%3D%20%5Cbegin%7Bpmatrix%7D%20y_1%20%5C%20y_2%20%5C%20y_3%20%5Cend%7Bpmatrix%7D) ì„ ì–»ì„ ìˆ˜ ìˆë‹¤.
 
-Çà·Ä°öÀÇ ¼ºÁú¿¡ ÀÇÇØ, À§ÀÇ ½Å°æ¸Á¿¡¼­ º» WeightµéÀ» Á÷Á¢ Çà·Ä·Î ³ªÅ¸³»¸é, ![eq](https://latex.codecogs.com/png.latex?W%20%3D%20%5Cbegin%7Bpmatrix%7D%201%20%5C%203%20%5C%205%20%5C%5C%202%20%5C%204%20%5C%206%20%5Cend%7Bpmatrix%7D) À¸·Î ³ªÅ¸³¾ ¼ö ÀÖ´Ù. 
+í–‰ë ¬ê³±ì˜ ì„±ì§ˆì— ì˜í•´, ìœ„ì˜ ì‹ ê²½ë§ì—ì„œ ë³¸ Weightë“¤ì„ ì§ì ‘ í–‰ë ¬ë¡œ ë‚˜íƒ€ë‚´ë©´, ![eq](https://latex.codecogs.com/png.latex?W%20%3D%20%5Cbegin%7Bpmatrix%7D%201%20%5C%203%20%5C%205%20%5C%5C%202%20%5C%204%20%5C%206%20%5Cend%7Bpmatrix%7D) ìœ¼ë¡œ ë‚˜íƒ€ë‚¼ ìˆ˜ ìˆë‹¤. 
 
-ÀÌÁ¦ Ã³À½ÀÇ ½Å°æ¸ÁÀ» Çà·Ä°ö°ú À§ÀÇ °¡ÁßÄ¡ Çà·Ä ![eq](https://latex.codecogs.com/png.latex?W)¸¦ ÀÌ¿ëÇÏ¿© ±¸ÇöÇØ º¸ÀÚ.
+ì´ì œ ì²˜ìŒì˜ ì‹ ê²½ë§ì„ í–‰ë ¬ê³±ê³¼ ìœ„ì˜ ê°€ì¤‘ì¹˜ í–‰ë ¬ ![eq](https://latex.codecogs.com/png.latex?W)ë¥¼ ì´ìš©í•˜ì—¬ êµ¬í˜„í•´ ë³´ì.
 
 ![eq](https://latex.codecogs.com/png.latex?%5Cbegin%7Bpmatrix%7D%20x_1%20%5C%20x_2%20%5Cend%7Bpmatrix%7D%20%5Ccdot%20%5Cbegin%7Bpmatrix%7D%20w_1_1%20%5C%20w_2_1%20%5C%20w_3_1%20%5C%5C%20w_1_2%20%5C%20w_2_2%20%5C%20w_3_2%20%5Cend%7Bpmatrix%7D%20%3D%20%5Cbegin%7Bpmatrix%7D%20y_1%20%5C%20y_2%20%5C%20y_3%20%5Cend%7Bpmatrix%7D)
 
@@ -45,9 +45,9 @@ X = np.array([3, 5])
 print(pctn(X))
 ```
 
-`np.dot()` ÇÔ¼ö·Î Çà·Ä°öÀ» ¼öÇàÇÕ´Ï´Ù. °á°ú´Â ´ÙÇàÈ÷ Àß ³ª¿À´Â °ÍÀ» º¼ ¼ö ÀÖ½À´Ï´Ù.
+`np.dot()` í•¨ìˆ˜ë¡œ í–‰ë ¬ê³±ì„ ìˆ˜í–‰í•©ë‹ˆë‹¤. ê²°ê³¼ëŠ” ë‹¤í–‰íˆ ì˜ ë‚˜ì˜¤ëŠ” ê²ƒì„ ë³¼ ìˆ˜ ìˆìŠµë‹ˆë‹¤.
 ```
 [13, 29, 45]
 ```
 
-ÁÖÀÇÇÒ Á¡Àº, ¿ø·¡ Çà·Ä°öÀÇ ¼ºÁú°ú µ¿ÀÏÇÏ°Ô, ´ëÀÀÇÏ´Â Â÷¿øÀÇ ¿ø¼Ò ¼ö¸¦ ¸ÂÃç¾ß ¿¬»êÀÌ °¡´ÉÇÏ´Ù´Â °ÍÀÌ´Ù. ![eq](https://latex.codecogs.com/png.latex?%28a%5Ctimes%20b%29) Å©±â Çà·Ä ![eq](https://latex.codecogs.com/png.latex?X) ¿Í ![eq](https://latex.codecogs.com/png.latex?%28c\times%20d%29) Å©±â Çà·Ä ![eq](https://latex.codecogs.com/png.latex?W)¸¦ ¿¬»êÇÑ ![eq](https://latex.codecogs.com/png.latex?Y%3DX%5Ccdot%20W) Çà·ÄÀÇ Å©±â´Â ![eq](https://latex.codecogs.com/png.latex?%28a%5Ctimes%20d%29) ÀÌ´Ù. ÀÌ¶§ ![eq](https://latex.codecogs.com/png.latex?b%20%5Cneq%20c) ÀÌ¸é, Çà·Ä ¿¬»êÀ» ÇÒ ¼ö ¾ø´Ù.
+ì£¼ì˜í•  ì ì€, ì›ë˜ í–‰ë ¬ê³±ì˜ ì„±ì§ˆê³¼ ë™ì¼í•˜ê²Œ, ëŒ€ì‘í•˜ëŠ” ì°¨ì›ì˜ ì›ì†Œ ìˆ˜ë¥¼ ë§ì¶°ì•¼ ì—°ì‚°ì´ ê°€ëŠ¥í•˜ë‹¤ëŠ” ê²ƒì´ë‹¤. ![eq](https://latex.codecogs.com/png.latex?%28a%5Ctimes%20b%29) í¬ê¸° í–‰ë ¬ ![eq](https://latex.codecogs.com/png.latex?X) ì™€ ![eq](https://latex.codecogs.com/png.latex?%28c\times%20d%29) í¬ê¸° í–‰ë ¬ ![eq](https://latex.codecogs.com/png.latex?W)ë¥¼ ì—°ì‚°í•œ ![eq](https://latex.codecogs.com/png.latex?Y%3DX%5Ccdot%20W) í–‰ë ¬ì˜ í¬ê¸°ëŠ” ![eq](https://latex.codecogs.com/png.latex?%28a%5Ctimes%20d%29) ì´ë‹¤. ì´ë•Œ ![eq](https://latex.codecogs.com/png.latex?b%20%5Cneq%20c) ì´ë©´, í–‰ë ¬ ì—°ì‚°ì„ í•  ìˆ˜ ì—†ë‹¤.
