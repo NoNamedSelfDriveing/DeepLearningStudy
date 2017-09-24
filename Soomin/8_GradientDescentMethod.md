@@ -16,7 +16,7 @@
 
 그럼, 신경망에서의 기울기는 어떻게 될 지 알아보자.
 
-가중치가 ![](https://latex.codecogs.com/gif.latex?W), 손실 함수가 ![](https://latex.codecogs.com/gif.latex?L)일떄, 이는 실제로
+가중치가 ![](https://latex.codecogs.com/gif.latex?W), 손실 함수가 ![](https://latex.codecogs.com/gif.latex?L)일때, 이는 실제로
 
 ![](https://latex.codecogs.com/gif.latex?W%20%3D%20%5Cbegin%7Bpmatrix%7D%20w_1_1%20%5C%20w_2_1%20%5C%20w_3_1%20%5C%5C%20w_1_2%20%5C%20w_2_2%20%5C%20w_3_2%20%5Cend%7Bpmatrix%7D%2C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20W%7D%20%3D%20%5Cbegin%7Bpmatrix%7D%20%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20w_1_1%7D%20%5C%20%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20w_2_1%7D%20%5C%20%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20w_3_1%7D%20%5C%5C%20%5C%5C%20%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20w_1_2%7D%20%5C%20%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20w_2_2%7D%20%5C%20%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20w_3_2%7D%20%5Cend%7Bpmatrix%7D)
 
