@@ -58,7 +58,7 @@ def OR(A, B):
     	return 1
 ```
 
-##### 가중치 도입
+### 가중치 도입
 
 ![eq](https://latex.codecogs.com/png.latex?\theta) 를 ![eq](https://latex.codecogs.com/png.latex?-b) 로 치환하면, 다음과 같이 퍼셉트론을 나타낼 수 있다.
 
@@ -74,7 +74,7 @@ def OR(A, B):
     	return 1
 ```
 
-##### 다층 퍼셉트론을 이용한 XOR 게이트
+### 다층 퍼셉트론을 이용한 XOR 게이트
 
 XOR 게이트의 진리표는 다음과 같다.
 
