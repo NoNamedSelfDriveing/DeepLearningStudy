@@ -2,7 +2,7 @@
 
 실제 선형 회귀 알고리즘을, Tensorflow를 이용하여 구현해보자.
 
-
+입력이 1 모양이고, 출력도 1 모양이므로, Weight는 1 모양이고 BIas도 1모양이다. 이를 `tf.random_normal()` 함수를 이용해 만들어 준다. 그 후 출력 퍼셉트론의 연산 내용인 가설 함수를 정의해 준다. 활성화 함수로는 항등 함수를 사용하고, 평균 제곱 오차를 사용하여 손실 함수를 정의해 준다. 그리고 경사 하강법을 사용하여 손실을 최소화하며 Weight값과 Bias값을 찾는다.
 
 ```
 import tensorflow as tf
@@ -16,10 +16,10 @@ dataY = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 X = tf.placeholder(tf.float32)
 Y = tf.placeholder(tf.float32)
 
-W = tf.Variable(tf.random_normal([1]))		# Weight : 1 크기
-b = tf.Variable(tf.random_normal([1]))		# Bias : 1 크기
+Wwight = tf.Variable(tf.random_normal([1]))		# Weight : 1 크기
+bias = tf.Variable(tf.random_normal([1]))		# Bias : 1 크기
 
-logits = W*X+b		# 가설 함수
+logits = Weight*X+bias		# 가설 함수
 cost = tf.reduce_mean(tf.square(logits-Y))		# 손실 함수
 
 trainer = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)		# 경사하강법 사용
