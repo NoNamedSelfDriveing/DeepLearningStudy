@@ -2,7 +2,7 @@
 
 Softmax 함수는, 다중 분류 문제에서 많이 활용되는 활성화 함수이다.
 
-이 함수는 다음과 같은 식으로 나타낼 수 있다. ![](https://latex.codecogs.com/png.latex?n%) : 출력층 노드 수, ![](https://latex.codecogs.com/png.latex?y_k) : 그중 ![](https://latex.codecogs.com/png.latex?k%)번째 출력, ![](https://latex.codecogs.com/png.latex?a_k) : ![](https://latex.codecogs.com/png.latex?k%) 번째 입력일 때, 이 함수는
+이 함수는 다음과 같은 식으로 나타낼 수 있다. ![](https://latex.codecogs.com/png.latex?n%) : 출력층 노드 수, ![](https://latex.codecogs.com/png.latex?y_k%) : 그중 ![](https://latex.codecogs.com/png.latex?k%)번째 출력, ![](https://latex.codecogs.com/png.latex?a_k%) : ![](https://latex.codecogs.com/png.latex?k%) 번째 입력일 때, 이 함수는
 ![](https://latex.codecogs.com/png.latex?y_k%3D%5Cfrac%7Be%5E%7Ba_k%7D%7D%7B%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20e%5E%7Ba_i%7D%7D) 로 나타내어진다.
 
 이를 직접 구현해보자.
