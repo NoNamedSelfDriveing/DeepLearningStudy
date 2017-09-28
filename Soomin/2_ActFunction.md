@@ -8,7 +8,7 @@
 
 ### 활성화 함수
 
-[여기](https://github.com/NoNamedSelfDriveing/DeepLearningStudy/blob/master/Soomin/20170922_Perceptron.md)서 봤던 퍼셉트론의 기본적인 구조는 다음과 같다.
+[여기](https://github.com/NoNamedSelfDriveing/DeepLearningStudy/blob/master/Soomin/1_Perceptron.md)서 봤던 퍼셉트론의 기본적인 구조는 다음과 같다.
 
 ![eq](https://latex.codecogs.com/gif.latex?Y%20%3D%20%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%200%20%5C%20%5C%20%5C%20%28w_1x_1&plus;w_2x_2&plus;b%20%5Cleq%200%29%5C%5C%201%20%5C%20%5C%20%5C%20%28w_1x_1&plus;w_2x_2&plus;b%20%3E%200%29%20%5Cend%7Bmatrix%7D%5Cright.)
 
