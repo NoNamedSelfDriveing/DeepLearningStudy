@@ -7,7 +7,7 @@
 퍼셉트론은 입력을 받아서 정해진 수식 또는 규칙에 따라 계산을 한 뒤, 정해진 임계값을 기반으로 출력을 결정한다.
 퍼셉트론 하나를 정의해보자.
 
-![eq1](https://latex.codecogs.com/png.latex?y%20%3D%20%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%200%20%5C%20%5C%20%5C%20%28w_1x_1%20&plus;%20w_2x_2%20%5Cleq%20%5Ctheta%29%20%5C%5C%201%20%5C%20%5C%20%5C%20%28w_1x_1%20&plus;%20w_2x_2%20%3E%20%5Ctheta%29%20%5Cend%7Bmatrix%7D%5Cright.)
+![eq1](https://latex.codecogs.com/gif.latex?y%20%3D%20%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%200%20%5C%20%5C%20%5C%20%28w_1x_1%20&plus;%20w_2x_2%20%5Cleq%20%5Ctheta%29%20%5C%5C%201%20%5C%20%5C%20%5C%20%28w_1x_1%20&plus;%20w_2x_2%20%3E%20%5Ctheta%29%20%5Cend%7Bmatrix%7D%5Cright.)
 
 이 퍼셉트론에서는 입력 ![eq](https://latex.codecogs.com/png.latex?x_1) 과 ![eq](https://latex.codecogs.com/png.latex?x_2) 를 받아, 가중치 ![eq](https://latex.codecogs.com/png.latex?w_1), ![eq](https://latex.codecogs.com/png.latex?w_2) 를 이용해 퍼셉트론 안에서 연산하여 결과 ![eq](https://latex.codecogs.com/png.latex?y) 를 내어놓고 있다. 이 때, ![eq](https://latex.codecogs.com/png.latex?\theta) 의 값과 연산 결과를 비교하여 출력이 결정되는데, ![eq](https://latex.codecogs.com/png.latex?\theta) 를 __임계값__ 이라고 한다.
 
