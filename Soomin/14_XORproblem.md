@@ -28,7 +28,7 @@ XOR 문제의 해결, 즉 데이터의 분류을 위해 우리는 아래의 파�
 
 수학적으로, 첫번째 히든 레이어로의 가중치는 ![](https://latex.codecogs.com/gif.latex?\begin{pmatrix}&space;2&space;\times&space;4&space;\end{pmatrix}) 크기, 두번째 히든 레이어로의 가중치는 ![](https://latex.codecogs.com/gif.latex?\begin{pmatrix}&space;4&space;\times&space;2&space;\end{pmatrix}) 크기, 출력 레이어로의 가중치는 ![](https://latex.codecogs.com/gif.latex?\begin{pmatrix}&space;2&space;\times&space;1&space;\end{pmatrix}) 이다. 편향도 각각 ![](https://latex.codecogs.com/gif.latex?4,&space;\&space;2,&space;\&space;1) 크기이다.
 
-그리고 이 문제는 입력에 따라 출력이 두 가지로 나누어지는 이중 분류 문제이다. 따라서 이중 분류의 손실 함수를 써야 함은 물론이고, 각 레이어에 Sigmoid 활성화 함수를 적용해주어야 한다. 항등 함수를 적용할 경우 학습이 되지 않을 것이다. Sigmoid 활성화 함수의 식을 다시 보고 넘어가자.
+그리고 이 문제는 입력에 따라 출력이 두 가지로 나누어지는 이중 분류 문제이다. 따라서 이중 분류의 손실 함수를 써야 함은 물론이고, 각 레이어에 Sigmoid 활성화 함수를 적용해주어야 한다. 항등 함수를 적용할 경우 학습이 되지 않을 것이다. 이중 분류의 손실 함수 식을 다시 보고 넘어가자.
 
 ![](https://latex.codecogs.com/gif.latex?cost%28H%28x%29%2C%20y%29%20%3D%20-ylog%28H%28x%29%29%20-%20%281-y%29log%281-H%28x%29%29)
 
