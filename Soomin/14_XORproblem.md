@@ -75,7 +75,7 @@ with tf.Session() as sess:
     for step in range(30001):
         cost_v, _ = sess.run([cost, trainer], feed_dict={X:dataX, Y:dataY})
 
-		# 200번 반복마다 현재 손실함수의 출력을 찍어줌
+	# 200번 반복마다 현재 손실함수의 출력을 찍어줌
         if step % 200 == 0:
             print(step, cost_v)
 
