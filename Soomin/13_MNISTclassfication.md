@@ -43,7 +43,7 @@ with tf.Session() as sess:
 
     for epoch in range(epochs):
 
-		# 총 데이터의 개수를 배치의 사이즈만큼 나눠서, 결국 모든 데이터를 학습할 수 있도록 함
+	# 총 데이터의 개수를 배치의 사이즈만큼 나눠서, 결국 모든 데이터를 학습할 수 있도록 함
         for step in range(int(mnist.train.num_examples / batch_size)):
             batchX, batchY = mnist.train.next_batch(batch_size)    # 배치 데이터 불러오기
             cost_v,_ = sess.run([cost, trainer], feed_dict={X:batchX, Y:batchY})    # 배치 데이터 학습
