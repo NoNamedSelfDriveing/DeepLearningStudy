@@ -12,6 +12,10 @@ SOFTMAX 분류는, 세 개 이상의 클래스를 분류하기 위해 사용되�
 
 각 클래스마다 따로 정의된 Weight를 이용해서, 출력 4개를 도출하고 있다. 이제 출력 ![](https://latex.codecogs.com/gif.latex?%5Cbegin%7Bbmatrix%7D%20y_1%20%5C%5C%20y_2%20%5C%5C%20y_3%20%5C%5C%20y_4%20%5Cend%7Bbmatrix%7D) 에 SOFTMAX 활성화 함수를 적용해, 총합이 1인 확률로 변환 후, One-hot Encoding을 통해 최고 확률만 1로 설정해주는 작업을 거쳐 분류를 완성할 수 있다.
 
+분류 과정에서 손실 함수는 __교차 엔트로피 오차__ 를 사용한다. 예전 글에 보았듯이, 교차 엔트로피 오차를 수식으로 나타내면 다음과 같다.
+
+![](https://latex.codecogs.com/gif.latex?E%20%3D%20%5Csum_%7Bk%7D%5E%7B%20%7Dt_k%20%5Clog_e%7By_k%7D)
+
 이제 이를 Tensorflow로 구현해 보자.
 
 ```

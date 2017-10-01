@@ -1,25 +1,37 @@
-# °æ»ç ÇÏ°­¹ı
+# ê²½ì‚¬ í•˜ê°•ë²•
 
-°æ»ç ÇÏ°­¹ı(Gradient Descent Method)´Â, ¼Õ½Ç ÇÔ¼ö¸¦ ÃÖ¼ÒÈ­ ÇÏ´Â ´ëÇ¥ÀûÀÎ ¹æ¹ıÀÌ´Ù.
+ê²½ì‚¬ í•˜ê°•ë²•(Gradient Descent Method)ëŠ”, ì†ì‹¤ í•¨ìˆ˜ë¥¼ ìµœì†Œí™” í•˜ëŠ” ëŒ€í‘œì ì¸ ë°©ë²•ì´ë‹¤.
 
-ÇÔ¼öÀÇ ±â¿ï±â°¡ °¡¸®Å°´Â ¹æÇâÀº, ±× ÁöÁ¡¿¡¼­ ÇÔ¼öÀÇ Ãâ·Â °ªÀ» °¡Àå Å©°Ô ÁÙÀÌ´Â ¹æÇâÀÌ´Ù. °æ»ç ÇÏ°­¹ıÀº ÀÌ Æ¯Â¡À» ÀÌ¿ëÇÏ´Âµ¥, ÇÔ¼öÀÇ ÇöÀç À§Ä¡¿¡¼­ÀÇ ±â¿ï±â¸¦ ±¸ÇØ¼­, ±× ¹æÇâÀ¸·Î ÀÏÁ¤ °Å¸®¸¸Å­ ÀÌµ¿ÇÏ´Â ÀÛ¾÷À» ¹İº¹ÇÏ´Â ¾Ë°í¸®ÁòÀÌ´Ù.
+í•¨ìˆ˜ì˜ ê¸°ìš¸ê¸°ê°€ ê°€ë¦¬í‚¤ëŠ” ë°©í–¥ì€, ê·¸ ì§€ì ì—ì„œ í•¨ìˆ˜ì˜ ì¶œë ¥ ê°’ì„ ê°€ì¥ í¬ê²Œ ì¤„ì´ëŠ” ë°©í–¥ì´ë‹¤. ê²½ì‚¬ í•˜ê°•ë²•ì€ ì´ íŠ¹ì§•ì„ ì´ìš©í•˜ëŠ”ë°, í•¨ìˆ˜ì˜ í˜„ì¬ ìœ„ì¹˜ì—ì„œì˜ ê¸°ìš¸ê¸°ë¥¼ êµ¬í•´ì„œ, ê·¸ ë°©í–¥ìœ¼ë¡œ ì¼ì • ê±°ë¦¬ë§Œí¼ ì´ë™í•˜ëŠ” ì‘ì—…ì„ ë°˜ë³µí•˜ëŠ” ì•Œê³ ë¦¬ì¦˜ì´ë‹¤.
 
-¼Õ½Ç ÇÔ¼öÀÇ ¸ğµç ±¸°£¿¡¼­ÀÇ ÃÖ¼Ú°ªÀ» Global MinimumÀÌ¶ó°í ÇÑ´Ù. ½Å°æ¸ÁÀ» ÇĞ½À ÇÒ ¶§, °æ»ç ÇÏ°­¹ıÀ» ÀÌ¿ëÇÏ¿© ¼Õ½Ç ÇÔ¼ö¸¦ ÃÖ¼ÒÈ­ÇÏ´Â ÀÛ¾÷Àº °ğ Global MinimumÀ» Ã£´Â ÀÏ°ú µ¿ÀÏÇÏ´Ù. 
+ì•„ë˜ì˜ ì†ì‹¤ í•¨ìˆ˜ë¥¼ ë³´ì.
 
-º¯¼ö ![](https://latex.codecogs.com/gif.latex?x_0), ![](https://latex.codecogs.com/gif.latex?x_1)À» °¡Áö°í ÀÖ´Â ¼Õ½Ç ÇÔ¼ö¿¡¼­ÀÇ °æ»ç ÇÏ°­¹ıÀ» ½ÄÀ¸·Î ³ªÅ¸³»¸é ´ÙÀ½°ú °°´Ù.
+![](image/Gradient1.png)
 
-![](https://latex.codecogs.com/gif.latex?x_0%20%3D%20x_0%20-%20%5Ceta%20%5Cfrac%7B%5Cdelta%20f%7D%7B%5Cdelta%20x_0%7D)
+xì¶•ì˜ WëŠ” ê°€ì¤‘ì¹˜(Weight)ì´ê³ , yì¶•ì˜ costëŠ” Wì— ì˜í•œ ì†ì‹¤ í•¨ìˆ˜ì˜ ì¶œë ¥ì„ ë‚˜íƒ€ë‚¸ë‹¤.
 
-![](https://latex.codecogs.com/gif.latex?x_1%20%3D%20x_1%20-%20%5Ceta%20%5Cfrac%7B%5Cdelta%20f%7D%7B%5Cdelta%20x_1%7D)
+í˜„ì¬ ì ì—ì„œ Wì— ëŒ€í•´ ì†ì‹¤ í•¨ìˆ˜ì˜ ë¯¸ë¶„ì„ ìˆ˜í–‰í•œë‹¤. ê·¸ëŸ¬ë©´ ê·¸ ì ì—ì„œì˜ ìˆœê°„ ë³€í™”ëŸ‰ ê°’ì´ ë‚˜ì˜¤ê²Œ ë˜ëŠ”ë°, ì´ë¥¼ ê·¸ë¦¼ìœ¼ë¡œ ë‚˜íƒ€ë‚´ë©´, ë‹¤ìŒê³¼ ê°™ì´ ì§ì„ ì²˜ëŸ¼ ë‚˜íƒ€ë‚œë‹¤.
 
-ÇÑ ¸¶µğ·Î, °¢ º¯¼öÀÇ ÇöÀç ±â¿ï±â¸¦ ±¸ÇØ¼­, ±× °ªÀÌ ¼Õ½Ç ÇÔ¼ö ![](https://latex.codecogs.com/gif.latex?f)¿¡ ¾ó¸¶³ª ¿µÇâÀ» ¹ÌÄ¥Áö¸¦ °áÁ¤ÇÏ´Â ÇÔ¼öÀÌ´Ù. ¿©±â¼­ ![](https://latex.codecogs.com/gif.latex?%5Ceta)´Â, ±â¿ï±â°¡ ½ÇÁ¦·Î ¼Õ½Ç ÇÔ¼ö¿¡ ¹ÌÄ¥ ¿µÇâÀ» °áÁ¤ÇÏ´Â Hyper Parameter·Î, ¸Å°³º¯¼öÀÇ º¯È­ Å©±â¸¦ °áÁ¤ÇÑ´Ù.
+![](image/Gradient2.png)
 
-±×·³, ½Å°æ¸Á¿¡¼­ÀÇ ±â¿ï±â´Â ¾î¶»°Ô µÉ Áö ¾Ë¾Æº¸ÀÚ.
+ì´ì œ ì´ ë¯¸ë¶„ê°’ì„ ì´ìš©í•˜ì—¬ ì‹¤ì œë¡œ ì†ì‹¤ í•¨ìˆ˜ì˜ ì¶œë ¥ì´ ì¤„ì–´ë“œëŠ” ìª½ìœ¼ë¡œ Wë¥¼ ìˆ˜ì •ì‹œì¼œì•¼ í•œë‹¤. ê°€ë§Œíˆ ë³´ë©´, ë¯¸ë¶„ê°’ì˜ ë¶€í˜¸ì™€ ë°˜ëŒ€ ë°©í–¥ìœ¼ë¡œ ì´ë™í•´ì•¼ ì¶œë ¥ì´ ë” ë‚®ì•„ì§„ë‹¤ëŠ” ê²ƒì„ ì•Œ ìˆ˜ ìˆë‹¤.
 
-°¡ÁßÄ¡°¡ ![](https://latex.codecogs.com/gif.latex?W), ¼Õ½Ç ÇÔ¼ö°¡ ![](https://latex.codecogs.com/gif.latex?L)ÀÏ¶§, ÀÌ´Â ½ÇÁ¦·Î
+ì†ì‹¤ í•¨ìˆ˜ì˜ ëª¨ë“  êµ¬ê°„ì—ì„œì˜ ìµœì†Ÿê°’ì„ Global Minimumì´ë¼ê³  í•œë‹¤. ì‹ ê²½ë§ì„ í•™ìŠµ í•  ë•Œ, ê²½ì‚¬ í•˜ê°•ë²•ì„ ì´ìš©í•˜ì—¬ ì†ì‹¤ í•¨ìˆ˜ë¥¼ ìµœì†Œí™”í•˜ëŠ” ì‘ì—…ì€ ê³§ Global Minimumì„ ì°¾ëŠ” ì¼ê³¼ ë™ì¼í•˜ë‹¤. 
 
-![](https://latex.codecogs.com/gif.latex?W%20%3D%20%5Cbegin%7Bpmatrix%7D%20w_1_1%20%5C%20w_2_1%20%5C%20w_3_1%20%5C%5C%20w_1_2%20%5C%20w_2_2%20%5C%20w_3_2%20%5Cend%7Bpmatrix%7D%2C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20W%7D%20%3D%20%5Cbegin%7Bpmatrix%7D%20%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20w_1_1%7D%20%5C%20%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20w_2_1%7D%20%5C%20%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20w_3_1%7D%20%5C%5C%20%5C%5C%20%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20w_1_2%7D%20%5C%20%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20w_2_2%7D%20%5C%20%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20w_3_2%7D%20%5Cend%7Bpmatrix%7D)
+ë³€ìˆ˜ ![](https://latex.codecogs.com/gif.latex?x_0), ![](https://latex.codecogs.com/gif.latex?x_1)ì„ ê°€ì§€ê³  ìˆëŠ” ì†ì‹¤ í•¨ìˆ˜ì—ì„œì˜ ê²½ì‚¬ í•˜ê°•ë²•ì„ ì‹ìœ¼ë¡œ ë‚˜íƒ€ë‚´ë©´ ë‹¤ìŒê³¼ ê°™ë‹¤.
 
-ÀÌ´Ù.
+![](https://latex.codecogs.com/gif.latex?x_0&space;=&space;x_0-\eta&space;\frac{\partial&space;f}{\partial&space;x_0})
 
-ÀÌ ¶§ ![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cdelta%20L%7D%7B%5Cdelta%20W%7D)ÀÇ °¢ ¿ø¼Ò´Â, ![](https://latex.codecogs.com/gif.latex?w_x_y) °¢°¢ÀÌ º¯È­ÇÔ¿¡ µû¶ó ![](https://latex.codecogs.com/gif.latex?L)¿¡ ¹ÌÄ¡´Â ¿µÇâÀ» ³ªÅ¸³½´Ù.
+![](https://latex.codecogs.com/gif.latex?x_0&space;=&space;x_0-\eta&space;\frac{\partial&space;f}{\partial&space;x_1})
+
+í•œ ë§ˆë””ë¡œ, ê° ë³€ìˆ˜ì˜ í˜„ì¬ ê¸°ìš¸ê¸°ë¥¼ êµ¬í•´ì„œ, ê·¸ ê°’ì´ ì†ì‹¤ í•¨ìˆ˜ ![](https://latex.codecogs.com/gif.latex?f)ì— ì–¼ë§ˆë‚˜ ì˜í–¥ì„ ë¯¸ì¹ ì§€ë¥¼ ê²°ì •í•˜ëŠ” í•¨ìˆ˜ì´ë‹¤. ì—¬ê¸°ì„œ ![](https://latex.codecogs.com/gif.latex?%5Ceta)ëŠ”, ê¸°ìš¸ê¸°ê°€ ì‹¤ì œë¡œ ì†ì‹¤ í•¨ìˆ˜ì— ë¯¸ì¹  ì˜í–¥ì„ ê²°ì •í•˜ëŠ” Hyper Parameterë¡œ, ë§¤ê°œë³€ìˆ˜ì˜ ë³€í™” í¬ê¸°ë¥¼ ê²°ì •í•œë‹¤.
+
+ê·¸ëŸ¼, ì‹ ê²½ë§ì—ì„œì˜ ê¸°ìš¸ê¸°ëŠ” ì–´ë–»ê²Œ ë  ì§€ ì•Œì•„ë³´ì.
+
+ê°€ì¤‘ì¹˜ê°€ ![](https://latex.codecogs.com/gif.latex?W), ì†ì‹¤ í•¨ìˆ˜ê°€ ![](https://latex.codecogs.com/gif.latex?L)ì¼ë•Œ, ì´ëŠ” ì‹¤ì œë¡œ
+
+![](https://latex.codecogs.com/gif.latex?W&space;=&space;\begin{pmatrix}&space;w_1_1&space;\&space;w_2_1&space;\&space;w_3_1&space;\\&space;w_1_2&space;\&space;w_2_2&space;\&space;w_3_2&space;\end{pmatrix}&space;,&space;\&space;\&space;\&space;\&space;\&space;\frac{\partial&space;L}{\partial&space;W}&space;=&space;\begin{pmatrix}&space;\frac{\partial&space;L}{\partial&space;w_1_1}&space;\&space;\frac{\partial&space;L}{\partial&space;w_2_1}&space;\&space;\frac{\partial&space;L}{\partial&space;w_3_1}&space;\\&space;\\&space;\frac{\partial&space;L}{\partial&space;w_1_2}&space;\&space;\frac{\partial&space;L}{\partial&space;w_2_2}&space;\&space;\frac{\partial&space;L}{\partial&space;w_3_2}&space;\end{pmatrix})
+
+ì´ë‹¤.
+
+ì´ ë•Œ ![](https://latex.codecogs.com/gif.latex?\frac{\partial&space;L}{\partial&space;W})ì˜ ê° ì›ì†ŒëŠ”, ![](https://latex.codecogs.com/gif.latex?w_x_y) ê°ê°ì´ ë³€í™”í•¨ì— ë”°ë¼ ![](https://latex.codecogs.com/gif.latex?L)ì— ë¯¸ì¹˜ëŠ” ì˜í–¥ì„ ë‚˜íƒ€ë‚¸ë‹¤.

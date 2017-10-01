@@ -26,7 +26,7 @@ print(pctn(3, 5))
 
 하지만 이렇게 직접 구현을 하게 되면, 노드가 많아지고 레이어가 깊어지면 코드의 길이가 기하급수적으로 늘어날 것이다. 그러나 행렬로 이 연산을 간단히 구현할 수 있다.
 
-입력 행렬 ![eq](https://latex.codecogs.com/png.latex?X%20%3D%20%5Cbegin%7Bpmatrix%7D%20x_1%20%5C%20x_2%20%5Cend%7Bpmatrix%7D) 와 가중치 행렬 ![eq](https://latex.codecogs.com/png.latex?X%20%3D%20%5Cbegin%7Bpmatrix%7D%20w_1_1%20%5C%20w_2_1%20%5C%20w_3_1%20%5C%5C%20w_1_2%20%5C%20w_2_2%20%5C%20w_3_2%20%5Cend%7Bpmatrix%7D) 을 곱하여 출력 ![eq](https://latex.codecogs.com/png.latex?Y%20%3D%20%5Cbegin%7Bpmatrix%7D%20y_1%20%5C%20y_2%20%5C%20y_3%20%5Cend%7Bpmatrix%7D) 을 얻을 수 있다.
+입력 행렬 ![eq](https://latex.codecogs.com/png.latex?X%20%3D%20%5Cbegin%7Bpmatrix%7D%20x_1%20%5C%20x_2%20%5Cend%7Bpmatrix%7D%) 와 가중치 행렬 ![eq](https://latex.codecogs.com/png.latex?X%20%3D%20%5Cbegin%7Bpmatrix%7D%20w_1_1%20%5C%20w_2_1%20%5C%20w_3_1%20%5C%5C%20w_1_2%20%5C%20w_2_2%20%5C%20w_3_2%20%5Cend%7Bpmatrix%7D%) 을 곱하여 출력 ![eq](https://latex.codecogs.com/png.latex?Y%20%3D%20%5Cbegin%7Bpmatrix%7D%20y_1%20%5C%20y_2%20%5C%20y_3%20%5Cend%7Bpmatrix%7D) 을 얻을 수 있다.
 
 행렬곱의 성질에 의해, 위의 신경망에서 본 Weight들을 직접 행렬로 나타내면, ![eq](https://latex.codecogs.com/png.latex?W%20%3D%20%5Cbegin%7Bpmatrix%7D%201%20%5C%203%20%5C%205%20%5C%5C%202%20%5C%204%20%5C%206%20%5Cend%7Bpmatrix%7D) 으로 나타낼 수 있다. 
 
