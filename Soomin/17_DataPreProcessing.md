@@ -4,15 +4,15 @@
 
 오늘은 대표적이면서도 간단한 전처리 방법을 잠깐 살펴보자.
 
-아래의 사진은 Stanford University의 ![CS231n Lecture 6 슬라이드](http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture6.pdf)에서 가져왔다.
+아래의 사진은 Stanford University의 ![CS231n](http://cs231n.stanford.edu/syllabus.html) Lecture 6 슬라이드에서 가져왔다.
 
 ![](image/preprocess1.PNG)
+
+### Zero Centered Data
 
 처음 우리의 데이터가 맨 왼쪽 빨간 그래프와 비슷하게 생겼다고 가정하자. 물론 현실의 데이터가 저렇게 예쁠 수가 없지만, 예제이기 때문에 이해해 주자. 빨간 그래프의 모양을 보이는 데이터의 각 원소에 전체의 평균을 빼주는 작업을 하면, 두번째의 초록 데이터와 같이 중앙이 0으로 맞춰진 __Zero Centered__ 데이터를 만들 수 있다. 데이터의 기준점을 맞춰주는 것 만으로도 큰 도움이 될 수 있다.
 
 직접 간단하게 구현해보자.
-
-### Zero Centered Data
 
 ```
 import numpy as np
