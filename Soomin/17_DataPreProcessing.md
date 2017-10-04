@@ -4,7 +4,7 @@
 
 오늘은 대표적이면서도 간단한 전처리 방법을 잠깐 살펴보자.
 
-아래의 사진은 Stanford University의 ![CS231n](http://cs231n.stanford.edu/syllabus.html) Lecture 6 슬라이드에서 가져왔다.
+아래의 사진은 Stanford University의 [CS231n](http://cs231n.stanford.edu/syllabus.html) Lecture 6 슬라이드에서 가져왔다.
 
 ![](image/preprocess1.PNG)
 
