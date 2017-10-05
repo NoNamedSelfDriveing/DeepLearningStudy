@@ -47,8 +47,8 @@
 
 도서는 「Deep Learning from Scratch」(O'REILLY, 2016)을 사용한다. 이후에 사용할 라이브러리는 Tensorflow와 Keras를 먼저 공부하여 이용하겠다.
 
-Tensorflow 실습을 위한 내용과 스터디 참고 자료로, 김성훈 교수님의 [모두를 위한 딥러닝 강의(2016)](humkim.github.io/ml) 를 활용하도록 하겠다.
+Tensorflow 실습을 위한 내용과 스터디 참고 자료로, 김성훈 교수님의 [모두를 위한 딥러닝 강의(2016)](http://hunkim.github.io/ml/) 를 활용하도록 하겠다.
 
 또 많은 자료는 Stanford University의 [CS231n](http://cs231n.stanford.edu/syllabus.html) 강좌를 이용하였다.
 
-또 이 내용은 [내 블로그](blog.naver.com/leesoo9297)에도 옮겨 다시 정리하고 있다.
+또 이 내용은 [내 블로그](https://blog.naver.com/leesoo9297)에도 옮겨 다시 정리하고 있다.
