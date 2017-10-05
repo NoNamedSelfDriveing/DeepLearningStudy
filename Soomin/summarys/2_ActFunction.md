@@ -1,10 +1,10 @@
-# 신경망과 활성화 함수
+﻿# 신경망과 활성화 함수
 
 ### 신경망
 
 신경망이란, 하나의 입력 층, 여러 은닉 층, 하나의 출력 층으로 이루어진 퍼셉트론들의 네트워크를 말한다. 전형적인 신경망의 형태는 다음과 같다.
 
-![eq](image/Network.png)
+![](../image/Network.png)
 
 ### 활성화 함수
 
@@ -37,7 +37,7 @@ plt.ylim(-0.1, 1.1)
 plt.show()
 ```
 
-![image](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/image/stairs_function.PNG)
+![image](../image/stairs_function.PNG)
 
 #### 시그모이드 함수
 
@@ -66,7 +66,7 @@ plt.ylim(-0.1, 1.1)
 plt.show()
 ```
 
-![image](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/image/sigmoid_function.PNG)
+![image](../image/sigmoid_function.PNG)
 
 #### ReLU 함수
 ReLU(Rectified Linear Unit) 함수는 정말 간단하지만 효과가 크다고 한다. 입력값이 0보다 작으면 0을, 그렇지 않으면 입력값을 그대로 출력하는 간단한 함수이다. 수식으로 나타내면 다음과 같다.
@@ -90,4 +90,4 @@ plt.ylim(-2, 7)
 plt.show()
 ```
 
-![image](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/image/ReLU_function.PNG)
+![image](../image/ReLU_function.PNG)

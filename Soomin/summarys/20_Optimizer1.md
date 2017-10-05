@@ -1,4 +1,4 @@
-# 최적화 알고리즘 1. SGD, Momentum, NAG
+﻿# 최적화 알고리즘 1. SGD, Momentum, NAG
 지금까지 공부하면서, 대부분의 경우에 최적화(Optimization, 손실 최소화) 알고리즘으로 Gradient Descent 알고리즘을 사용했었다. 하지만 저번 MNIST 분류를 구현하면서, Adam이라는 새로운 Optimization 알고리즘을 사용했다. 정확히 어떤 원리로 작동하는 알고리즘인지 모르는 채로 사용했었는데, 이번 기회에 Optimization 알고리즘들을 한번 정리해보려고 한다.
 
 이번 글에서는 SGD(Stochastic Gradient Descent), Momentum, NAG(Nesterov Accelerated Gradient) 세 가지에 대해 알아보자.
@@ -17,7 +17,7 @@ SGD를 사용하면 그때 그때 훨씬 적은 데이터를 이용해 최적화
 ### Momentum
 SGD는 Local Minimum에 매우 취약한 알고리즘이다. 아래의 그림은 여러 최적화 알고리즘들의 수렴 모습인데, SGD는 결국 Local Minimum에 빠지고 마는 모습을 보여 준다.
 
-![](image/SaddlePoint.gif)
+![](../image/SaddlePoint.gif)
 
 SGD의 문제점을 해결하기 위해 수많은 기법들이 고안되었고, 그 중 하나가 __Momentum__ 이다.
 
@@ -34,7 +34,7 @@ Momentum의 사전적 뜻은 '탄력, 추진력' 등이다. Momentum 기법은 �
 
 아래의 그림은 Momentum을 적용한 최적화와 그렇지 않은 최적화의 가중치 갱신 경로를 보여주고 있다.
 
-![](image/momentum.png)
+![](../image/momentum.png)
 
 ### NAG (Nesterov Accelerated Gradient)
 NAG는 Momentum을 약간 변형한 기법이다. Momentum이 기울기와 현재의 속도를 동시에 고려해서 다음 이동 방향과 속도를 결정한다면, NAG는 일단 현재 속도로 이동한 후 기울기를 고려해서 다음 이동 방향을 정한다. 식으로 보면 다음과 같다.
@@ -45,6 +45,6 @@ NAG는 Momentum을 약간 변형한 기법이다. Momentum이 기울기와 현�
 
 먼저 ![](https://latex.codecogs.com/gif.latex?%5Calpha%20v)의 속도로 이동한 후, 그 결과의 기울기를 이용하여 속도를 갱신하고 있다. 이를 그림으로 보면 다음과 같을 것이다. 그림은 CS231n의 슬라이드에서 가져왔다.
 
-![](image/NAG.PNG)
+![](../image/NAG.PNG)
 
 NAG는 일반 Momentum보다 평균적으로 더 좋은 성능을 보인다. 일반 Momentum 방식은 기울기에 따라 이동을 한 후 속도에 따라 다시 이동하는 방식이지만, NAG는 속도에 따라 미리 이동한 후 기울기를 고려하여 속도를 변화시키기 때문에, Momentum의 속도를 이용한 빠른 이동이라는 이점을 살리면서 더욱 안정적인 이동을 할 수 있게 된다.

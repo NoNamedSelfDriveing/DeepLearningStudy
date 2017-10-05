@@ -1,4 +1,4 @@
-# 이중 분류
+﻿# 이중 분류
 
 이중 분류(Binary
 Classfication)는, 입력된 데이터에 따라 출력을 두 가지(0과 1)로 분류하는 기법이다.
@@ -11,13 +11,13 @@ Classfication)는, 입력된 데이터에 따라 출력을 두 가지(0과 1)로
 
 정답 데이터가 1일 경우 먼저 살펴보자. 이 때는 ![](https://latex.codecogs.com/gif.latex?-log%28H%28x%29%29)가 손실 함수로 적용된다. ![](https://latex.codecogs.com/gif.latex?-log%28x%29)의 그래프를 보자.
 
-![](image/LogisticFunction.PNG)
+![](../image/LogisticFunction.PNG)
 
 이 그래프를 보면, x가 0일 때 함숫값은 무한대로 발산하고, 1일 때 0으로 감소하는 것을 볼 수 있다. ![](https://latex.codecogs.com/gif.latex?H%28x%29)가 0에 가까워질수록 손실 함수의 출력은 무한대로 발산할 것이고, 1에 가까워질수록 0에 수렴할 것이다.
 
 반대로 정답 데이터가 0일 경우를 살펴보자.  이 때의 손실 함수는 ![](https://latex.codecogs.com/gif.latex?-log%281-H%28x%29%29) 이다. 그래프를 보자.
 
-![](image/LogisticFunction2.PNG)
+![](../image/LogisticFunction2.PNG)
 
 그래프를 보면, x가 0일 때 함숫값이 0으로 수렴하고, 1일 때 무한대로 발산한다.
 
