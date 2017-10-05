@@ -1,10 +1,10 @@
-# MNIST 분류의 구현
+﻿# MNIST 분류의 구현
 
 SOFTMAX 분류를 이용하여, 실제 MNIST 데이터를 분류하는 작업을 구현해보자.
 
 이전에 보았듯이, MNIST 데이터는 아래와 같은 28 * 28 크기 손글씨 데이터셋이다.
 
-![](image/mnist.PNG)
+![](../image/mnist.PNG)
 
 이전에 구현해 본 일반 SOFTMAX와 동일한 방법을 사용해서 MNIST 손글씨 데이터의 분류를 구현해보자. 데이터셋은, `tensorflow.examples.tutorials.mnist` 에 있는 `input_data` 를 이용하여 가져오도록 하겠다.
 

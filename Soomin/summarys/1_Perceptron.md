@@ -1,4 +1,4 @@
-# 퍼셉트론
+﻿# 퍼셉트론
 
 ### 퍼셉트론
 
@@ -91,7 +91,7 @@ XOR 게이트를 만들기 위한 ![eq](https://latex.codecogs.com/png.latex?w_1
 
 이미 구현한 AND, OR 게이트를 이용해서 XOR 게이트를 구현할 수 있다. 추가로 NOT 게이트 또한 구현해야 한다. 이 다층 퍼셉트론의 구조를 보면 다음과 같다.
 
-![eq](https://github.com/NoNamedSelfDriveing/DeepLearningStudy/blob/master/Soomin/image/XOR_perceptron_network.png)
+![](../image/XOR_perceptron_network.png)
 
 이를 파이썬으로 직접 구현해 보자.
 

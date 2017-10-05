@@ -1,16 +1,16 @@
-# 행렬곱을 이용한 다층 신경망
+﻿# 행렬곱을 이용한 다층 신경망
 
-![](image/Network2.png)
+![](../image/Network2.png)
 
 이 형태의 다층 신경망을 구현해 보자.
 
 이번 신경망에는, 편향(Bias)도 추가해 보자.
 
-![](image/Network3.png)
+![](../image/Network3.png)
 
 편향은 입력 층 뿐만이 아니라, 모든 은닉층에 필요하다.
 
-![](image/Network4.png)
+![](../image/Network4.png)
 
 ### Hidden 1 Layer
 그럼, Input Layer에서 Hidden 1 Layer로 가는 연산 먼저 구현해보자. 입력 노드가 2개, 은닉 1층의 노드가 3개이므로, 가중치의 모양은 ![](https://latex.codecogs.com/png.latex?%282%20%5Ctimes%203%2)) 행렬이다. 여기에, Bias는 그저 원소간 덧셈을 수행을 하는 역할이므로, 은닉 1층의 노드 개수에 따라 크기는 3이다. 여기서 알 수 있는 사실은, Bias의 크기는 다음 Layer의 모양과 크기에 맞춰주면 된다는 것이다.

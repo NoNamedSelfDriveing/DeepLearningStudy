@@ -1,14 +1,14 @@
-# Linear Regression
+﻿# Linear Regression
 
 선형 회귀(Linear Regression)은, 주어진 데이터 사이에서, 그것들의 분포와 가장 가까운 직선을 찾는 방법이다.
 
 X 데이터와 Y 데이터가 아래와 같은 분포를 가지고 있는 데이터셋이 있다고 하자.
 
-![](image/LinearRegression1.png)
+![](../image/LinearRegression1.png)
 
 이 데이터들과 같은 규칙으로 분포된 새로운 X 데이터가 있을 때, 다음의 파란 직선에 맞추어 Y 값을 예측할 수 있을 것이다.
 
-![](image/LinearRegression2.png)
+![](../image/LinearRegression2.png)
 
 이 파란 직선과 같은 선형 함수를 찾는 것이 선형 회귀법이다.
 
