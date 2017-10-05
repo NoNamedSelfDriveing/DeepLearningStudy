@@ -12,10 +12,10 @@ AdaGrad가 학습률 감소를 도입한 기본적인 매개변수 최적화 알
 
 ![](https://latex.codecogs.com/gif.latex?h)의 변화에 따라 각 원소마다 변화량이 달라지는데, 이전 기울기 ![](https://latex.codecogs.com/gif.latex?%5Cfrac%20%7B%5Cpartial%20L%7D%7B%5Cpartial%20W%7D)에서 어떤 원소의 변화가 컸을 경우 ![](https://latex.codecogs.com/gif.latex?h)에서 해당 원소의 값이 커져 해당 매개변수의 학습률이 더 크게 감소하고, 원소의 기울기 변화가 작았을 경우에는 해당 매개변수의 학습률이 더 작게 감소한다.
 
-AdaGrad는 좋은 알고리즘이지만, ![](https://latex.codecogs.com/gif.latex?h)의 값이 계속 커지기만 하므로, 언젠가는 학습률이 0에 수렴해 학습이 진행되지 않는 상황이 발생할 수 있다는 것이다.
+AdaGrad는 좋은 알고리즘이지만 문제점을 가지고 있다. ![](https://latex.codecogs.com/gif.latex?h)의 값이 계속 커지기만 하므로, 언젠가는 학습률이 0에 수렴해 학습이 진행되지 않는 상황이 발생할 수 있다는 것이다.
 
 ### RMSProp
-AdaGrad의 위와 같은 문제를 해결하기 위하여 만들어진 알고리즘이 __RMSProp__ 이다. RMSProp의 아이디어는, 먼 과거의 기울기를 서서히 잊고 최근의 새로운 기울기 정보를 학습률 갱신에 크게 반영하자는 것입니다. 그리고 이 과정에서, __지수이동평균(EMA)__ 를 사용한다.
+AdaGrad의 위와 같은 문제를 해결하기 위하여 만들어진 알고리즘이 __RMSProp__ 이다. RMSProp의 아이디어는, 먼 과거의 기울기를 서서히 잊고 최근의 새로운 기울기 정보를 학습률 갱신에 크게 반영하자는 것입니다. 그리고 이 과정에서, __지수이동평균(EMA)__ 을 사용한다.
 
 지수이동평균을 잠깐 알아보고 가자. 최신의 정보(값)을 ![](https://latex.codecogs.com/gif.latex?x_n), 과거의 정보(값)들의 종합을 ![](https://latex.codecogs.com/gif.latex?s_n), 0과 1 사이의 값을 가지는 계수를 ![](https://latex.codecogs.com/gif.latex?%5Calpha)로 놓을 때, 업데이트되는 다음의 정보 ![](https://latex.codecogs.com/gif.latex?s_n_&plus;_1)는 다음과 같이 정의된다.
 
