@@ -1,8 +1,8 @@
-# Deep and Wide XOR
+﻿# Deep and Wide XOR
 
 이전 글에서, XOR 문제를 해결하기 위한 신경망을 만들고 학습시켰었다. 이번에는 그 신경망을 더 넓게, 또는 더 깊게 구성해서 어떻게 성능의 변화가 있는지 직접 확인해보자.
 
-이 글에서는, 신경망의 구성 부분을 제외한 나머지 코드들은 모두 ![14번 글](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/14_XORproblem.md)과 동일하게 사용한다. 또한 신경망의 기본적인 구조도 동일하게 사용한다.
+이 글에서는, 신경망의 구성 부분을 제외한 나머지 코드들은 모두 ![14번 글](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/14_XORproblem.md)과 동일하게 사용한다. 또한 신경망의 기본적인 구조도 동일하게 사용한다.
 
 ### Wide Network
 
