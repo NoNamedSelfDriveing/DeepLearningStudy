@@ -22,7 +22,7 @@ x축의 W는 가중치(Weight)이고, y축의 cost는 W에 의한 손실 함수�
 
 ![](https://latex.codecogs.com/gif.latex?x_0&space;=&space;x_0-\eta&space;\frac{\partial&space;f}{\partial&space;x_0})
 
-![](https://latex.codecogs.com/gif.latex?x_0&space;=&space;x_0-\eta&space;\frac{\partial&space;f}{\partial&space;x_1})
+![](https://latex.codecogs.com/gif.latex?x_1&space;=&space;x_1-\eta&space;\frac{\partial&space;f}{\partial&space;x_1})
 
 한 마디로, 각 변수의 현재 기울기를 구해서, 그 값이 손실 함수 ![](https://latex.codecogs.com/gif.latex?f)에 얼마나 영향을 미칠지를 결정하는 함수이다. 여기서 ![](https://latex.codecogs.com/gif.latex?%5Ceta)는, 기울기가 실제로 손실 함수에 미칠 영향을 결정하는 Hyper Parameter로, 매개변수의 변화 크기를 결정한다.
 
