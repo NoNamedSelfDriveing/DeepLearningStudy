@@ -41,6 +41,8 @@
 
 [21. 매개변수 최적화 알고리즘 2 : AdaGrad, RMSProp, Adam](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/21_Optimizer2.md)
 
+[22. Dropout](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/22_Dropout.md)
+
 # First Mindgaim...
 
 딥 러닝을 당장 프로젝트를 하기 위해서 급하게 공부했었다. 이 과정에서 깊은 원리에 대한 지식 없이 Tensorflow 라이브러리 사용만을 했던 것 같은데, 이 레포지토리와 함께 딥 러닝을 처음부터 다시, 천천히 그리고 깊이 공부하려고 한다.
