@@ -46,7 +46,7 @@
 # First Mindgaim...
 
 딥 러닝을 당장 프로젝트를 하기 위해서 급하게 공부했었다. 이 과정에서 깊은 원리에 대한 지식 없이 Tensorflow 라이브러리 사용만을 했던 것 같은데, 이 레포지토리와 함께 딥 러닝을 처음부터 다시, 천천히 그리고 깊이 공부하려고 한다.
-
+ 
 도서는 「Deep Learning from Scratch」(O'REILLY, 2016)을 사용한다. 이후에 사용할 라이브러리는 Tensorflow와 Keras를 먼저 공부하여 이용하겠다.
 
 Tensorflow 실습을 위한 내용과 스터디 참고 자료로, 김성훈 교수님의 [모두를 위한 딥러닝 강의(2016)](http://hunkim.github.io/ml/) 를 활용하도록 하겠다.
