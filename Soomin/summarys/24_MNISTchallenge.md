@@ -18,21 +18,21 @@ Adam OptimizerÀÇ ÇÐ½À·ü·Î´Â 0.01À» »ç¿ëÇÏ¿´À¸¸ç, ÀüÃ¼ ¼¼Æ® ÇÐ½ÀÀ» 15 epoch ¼öÇàÇ
 
 °á°ú´Â ´ÙÀ½°ú °°´Ù.
 
-![](../image/MNIST_ch1.PNG)
+![](../image/MNIST_Ch1.PNG)
 
 °£´ÜÇÑ ÃÊ±âÈ­ ¹æ¹ýÀÇ º¯È­·Î 96.77%ÀÇ Á¤È®µµ¸é ³ª»ÚÁö ¾ÊÀº °Í °°´Ù. ¹«¾ùº¸´Ù ÀÎ»óÀûÀÌ¾ú´ø°Ç, °¡ÁßÄ¡ÀÇ È¿°úÀûÀÎ ÃÊ±âÈ­·Î ÀÎÇØ cost ÇÔ¼ö°¡ Ã³À½ºÎÅÍ ¸Å¿ì ³·Àº Á¡¿¡¼­ ½ÃÀÛÇß´Ù´Â °ÍÀÌ´Ù.
 
 ### 2Â÷ ±¸Çö : Hidden LayerÀÇ Ãß°¡
 µÎ¹øÂ°·Î, Hidden Layer¸¦ µÎ Ãþ ´õ Ãß°¡ÇØ¼­ 5ÃþÀÇ ½Å°æ¸ÁÀ¸·Î ¸ðµ¨À» ±¸¼ºÇß´Ù. ±×¸®°í ÇÐ½À·üÀ» 0.001·Î ´õ¿í ³·Ãè´Ù. ´õ¿í ±íÀº ¸ðµ¨À» ±¸¼ºÇÏ¸é, ¾Æ¸¶ ´õ ³·Àº ÃÖÀû°ª¿¡ µµ´ÞÇÏÁö ¾ÊÀ»±î ½Í´Ù. °á°ú´Â ´ÙÀ½°ú °°¾Ò´Ù.
 
-![](../image/MNIST_ch2.PNG)
+![](../image/MNIST_Ch2.PNG)
 
 96.73%·Î ¿ÀÈ÷·Á »ìÂ¦ ³·¾ÆÁø °á°ú¸¦ º¸¿´´Ù. ÇÐ½À ÃÊ¹Ý¿¡´Â Àá±ñ ´õ ºü¸£°Ô ¼ö·ÅÇÏ´Â ¸ð½ÀÀ» º¸¿©ÁÖ´Ù°¡, 1Â÷ ±¸Çö°ú ±Ý¹æ ºñ½ÁÇØÁ³´Ù.
 
 ### 3Â÷ ±¸Çö : ´õ¿í ³ÐÀº ³×Æ®¿öÅ©ÀÇ ±¸¼º
 ±×·¯¸é ÀÌ¹ø¿¡´Â ±í°Ô¸¸ °¡Áö ¸»°í, ¹æ±ÝÀÇ 5Ãþ ³×Æ®¿öÅ©¸¦ ´õ ³Ð°Ô ¸¸µé¾îº¸ÀÚ´Â »ý°¢ÀÌ µé¾ú´Ù. È÷µç ·¹ÀÌ¾îµéÀº Áö±Ý±îÁö 256°³ÀÇ ÆÛ¼ÁÆ®·ÐÀ» °¡Áö°í ÀÖ¾ú´Âµ¥, 512°³·Î È®ÀåÇØº¸ÀÚ. °¡ÁßÄ¡ÀÇ ¸ð¾çµéÀº (784 x 512), (512 x 512), (512 x 512), (512 x 512), (512 x 10)ÀÌ µÉ °ÍÀÌ´Ù. °á°ú´Â ´ÙÀ½°ú °°¾Ò´Ù.
 
-![](../image/MNIST_ch3.PNG)
+![](../image/MNIST_Ch3.PNG)
 
 ÇÐ½À ÃÊ¹Ý¿¡´Â ÈÎ¾À ¸Ö¸® ¶³¾îÁ® º¸¿´À¸³ª, °á±¹ ´õ ³·Àº ÃÖÀû°ªÀ¸·Î ¼ö·ÅÇß´Ù. 97.03%ÀÇ Á¤È®µµ¸¦ ±â·ÏÇß´Ù. È®½ÇÈ÷ Àû´çÈ÷ ±íÀ¸¸é¼­ ³ÐÀº ³×Æ®¿öÅ©¸¦ ±¸¼ºÇÏ´Â °ÍÀÌ Áß¿äÇØ º¸ÀÎ´Ù.
 
@@ -41,7 +41,7 @@ Adam OptimizerÀÇ ÇÐ½À·ü·Î´Â 0.01À» »ç¿ëÇÏ¿´À¸¸ç, ÀüÃ¼ ¼¼Æ® ÇÐ½ÀÀ» 15 epoch ¼öÇàÇ
 ### 4Â÷ ±¸Çö : Dropout
 ¸¶Áö¸·À¸·Î Dropout ±â¹ýÀ» ½ÇÁ¦·Î Àû¿ëÇØ º¸±â·Î Çß´Ù. 4°³ÀÇ ·¹ÀÌ¾î¿¡¼­ °¢°¢ 70%ÀÇ »ýÁ¸·üÀ» ÀÌ¿ëÇØ DropoutÀ» ±¸ÇöÇß´Ù. ±×¸®°í Training EpochÀ» ÃÑ 20È¸·Î 5È¸ ´Ã·È´Ù. °á°ú´Â ´ÙÀ½°ú °°¾Ò´Ù.
 
-![](../image/MNIST_ch4.PNG)
+![](../image/MNIST_Ch4.PNG)
 
 ¹«·Á 98.22%ÀÇ Á¤È®µµ·Î, È¹±âÀûÀÎ ¼º´É Çâ»óÀ» ºÒ·¯¿Ô´Ù. DropoutÀÌ ½ÇÁ¦·Î È¿°ú ÀÖ´Â ±â¹ýÀÓÀ» Áõ¸íÇÒ ¼ö ÀÖ¾ú´Ù.
 
