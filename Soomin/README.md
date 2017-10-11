@@ -46,7 +46,7 @@
 [23. Model Ensemble](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/23_Ensemble.md)
 
 [24. MNIST NN Challenge](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/24_MNISTchallenge.md)
-s
+
 [25. 배치 정규화 (Batch Normalization)](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/25_BatchNormalization.md)
 
 # First Mindgaim...
