@@ -1,4 +1,16 @@
-﻿# Index
+# First Mindgaim...
+
+딥 러닝을 당장 프로젝트를 하기 위해서 급하게 공부했었다. 이 과정에서 깊은 원리에 대한 지식 없이 Tensorflow 라이브러리 사용만을 했던 것 같은데, 이 레포지토리와 함께 딥 러닝을 처음부터 다시, 천천히 그리고 깊이 공부하려고 한다.
+ 
+도서는 「Deep Learning from Scratch」(O'REILLY, 2016)을 사용한다. 이후에 사용할 라이브러리는 Tensorflow와 Keras를 먼저 공부하여 이용하겠다.
+
+Tensorflow 실습을 위한 내용과 스터디 참고 자료로, 김성훈 교수님의 [모두를 위한 딥러닝 강의(2016)](http://hunkim.github.io/ml/) 를 활용하도록 하겠다.
+
+또 많은 자료는 Stanford University의 [CS231n](http://cs231n.stanford.edu/syllabus.html) 강좌를 이용하였다.
+
+또 이 내용은 [내 블로그](https://blog.naver.com/leesoo9297)에도 옮겨 다시 정리하고 있다.
+
+# Index
 [1. 퍼셉트론](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/1_Perceptron.md)
 
 [2. 신경망과 활성화 함수](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/2_ActFunction.md)
@@ -54,15 +66,3 @@
 [27. CNN - 합성곱 계층 (Convolution Layer)](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/27_CNN2.md)
 
 [28. CNN - Zero Padding, Pooling Layer](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/28_CNN3.md)
-
-# First Mindgaim...
-
-딥 러닝을 당장 프로젝트를 하기 위해서 급하게 공부했었다. 이 과정에서 깊은 원리에 대한 지식 없이 Tensorflow 라이브러리 사용만을 했던 것 같은데, 이 레포지토리와 함께 딥 러닝을 처음부터 다시, 천천히 그리고 깊이 공부하려고 한다.
- 
-도서는 「Deep Learning from Scratch」(O'REILLY, 2016)을 사용한다. 이후에 사용할 라이브러리는 Tensorflow와 Keras를 먼저 공부하여 이용하겠다.
-
-Tensorflow 실습을 위한 내용과 스터디 참고 자료로, 김성훈 교수님의 [모두를 위한 딥러닝 강의(2016)](http://hunkim.github.io/ml/) 를 활용하도록 하겠다.
-
-또 많은 자료는 Stanford University의 [CS231n](http://cs231n.stanford.edu/syllabus.html) 강좌를 이용하였다.
-
-또 이 내용은 [내 블로그](https://blog.naver.com/leesoo9297)에도 옮겨 다시 정리하고 있다.
