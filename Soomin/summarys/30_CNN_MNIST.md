@@ -127,7 +127,7 @@ cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, lab
 trainer = tf.train.AdamOptimizer(0.001).minimize(cost)    # Use Adam optimizer
 ```
 
-이 글에서는 모델의 모양과 CNN의 구현법에 중점을 두었으므로, 실제 학습하는 부분은 적어놓지 않겠다. 그 대신 코드를 [이 곳]()에 공유하겠다.
+이 글에서는 모델의 모양과 CNN의 구현법에 중점을 두었으므로, 실제 학습하는 부분은 적어놓지 않겠다. 그 대신 코드를 [이 곳](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/codes/mnist_cnn.py)에 공유하겠다.
 
 정확도는 99.38%로 오류율이 드디어 1% 이하로 떨어진 것을 볼 수 있었다. CNN이 이미지의 특성을 이해하는 성질을 가지고 있기 때문에 이정도 정확도가 나온 것 같다.
 
