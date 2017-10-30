@@ -1,13 +1,13 @@
-# CNN : MNIST ºÐ·ù ±¸Çö
-ÀÌÁ¦, ½ÇÁ¦·Î MNIST ºÐ·ù¸¦ CNNÀ¸·Î ±¸ÇöÇÏ¸é¼­ CNNÀ» Á÷Á¢ ±¸ÇöÇØº¸ÀÚ. ÄÚµå´Â [±è¼ºÈÆ ±³¼ö´ÔÀÇ °­ÀÇ ÄÚµå](https://github.com/hunkim/DeepLearningZeroToAll/blob/master/lab-11-2-mnist_deep_cnn.py)¸¦ ÀÌ¿ëÇÏ¿´´Ù.
+# CNN : MNIST ë¶„ë¥˜ êµ¬í˜„
+ì´ì œ, ì‹¤ì œë¡œ MNIST ë¶„ë¥˜ë¥¼ CNNìœ¼ë¡œ êµ¬í˜„í•˜ë©´ì„œ CNNì„ ì§ì ‘ êµ¬í˜„í•´ë³´ìž. ì½”ë“œëŠ” [ê¹€ì„±í›ˆ êµìˆ˜ë‹˜ì˜ ê°•ì˜ ì½”ë“œ](https://github.com/hunkim/DeepLearningZeroToAll/blob/master/lab-11-2-mnist_deep_cnn.py)ë¥¼ ì´ìš©í•˜ì˜€ë‹¤.
 
-¸ÕÀú, ¿ì¸®°¡ ±¸ÇöÇÒ MNIST ºÐ·ù CNN ¸ðµ¨Àº ´ÙÀ½°ú °°Àº ¸ð¾çÀÌ´Ù.
+ë¨¼ì €, ìš°ë¦¬ê°€ êµ¬í˜„í•  MNIST ë¶„ë¥˜ CNN ëª¨ë¸ì€ ë‹¤ìŒê³¼ ê°™ì€ ëª¨ì–‘ì´ë‹¤.
 
-![](../images/CNN51.png)
+![](../image/CNN51.png)
 
-ÄÁ¹ú·ç¼Ç ¿¬»ê°ú Ç®¸µ ¿¬»êÀ» ¼öÇàÇÏ´Â È÷µç ·¹ÀÌ¾î¸¦ 3È¸ °ÅÄ£ ÈÄ¿¡, ±× µ¥ÀÌÅÍ¸¦ ´Ù½Ã Âß Æì¼­ SOFTMAX ºÐ·ù¸¦ À§ÇÑ Fully-Connected Layer¿¡ ³ÖÀ» °ÍÀÌ´Ù. ±× SOFTMAX ¿¬»êÀÇ °á°ú¸¦ ÀÌ¿ëÇÏ¿© ºÐ·ù¸¦ ¼öÇàÇÏ°Ô µÈ´Ù.
+ì»¨ë²Œë£¨ì…˜ ì—°ì‚°ê³¼ í’€ë§ ì—°ì‚°ì„ ìˆ˜í–‰í•˜ëŠ” ížˆë“  ë ˆì´ì–´ë¥¼ 3íšŒ ê±°ì¹œ í›„ì—, ê·¸ ë°ì´í„°ë¥¼ ë‹¤ì‹œ ì­‰ íŽ´ì„œ SOFTMAX ë¶„ë¥˜ë¥¼ ìœ„í•œ Fully-Connected Layerì— ë„£ì„ ê²ƒì´ë‹¤. ê·¸ SOFTMAX ì—°ì‚°ì˜ ê²°ê³¼ë¥¼ ì´ìš©í•˜ì—¬ ë¶„ë¥˜ë¥¼ ìˆ˜í–‰í•˜ê²Œ ëœë‹¤.
 
-¸ÕÀú MNIST µ¥ÀÌÅÍ¸¦ ºÒ·¯ ¿ÀÀÚ.
+ë¨¼ì € MNIST ë°ì´í„°ë¥¼ ë¶ˆëŸ¬ ì˜¤ìž.
 
 ```
 import tensorflow as tf
@@ -17,7 +17,7 @@ tf.set_random_seed(9297)
 mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 ```
 
-Àú¹ø¿¡ MNIST ºÐ·ù¸¦ ±¸ÇöÇß´ø °Í°ú °°ÀÌ, ¹èÄ¡ ÇÐ½ÀÀ» ±¸ÇöÇÒ °ÍÀÌ´Ù. ÇÐ½À¿¡ »ç¿ëµÇ´Â Hyper ParameterµéÀ» Á¤ÇØ ÁØ´Ù.
+ì €ë²ˆì— MNIST ë¶„ë¥˜ë¥¼ êµ¬í˜„í–ˆë˜ ê²ƒê³¼ ê°™ì´, ë°°ì¹˜ í•™ìŠµì„ êµ¬í˜„í•  ê²ƒì´ë‹¤. í•™ìŠµì— ì‚¬ìš©ë˜ëŠ” Hyper Parameterë“¤ì„ ì •í•´ ì¤€ë‹¤.
 
 ```
 learning_rate = 0.001
@@ -26,9 +26,9 @@ batch_size = 100
 keep_prob = 0.7
 ```
 
-ÇÐ½À·ü, ÇÐ½ÀÇÒ Epoch ¼ö, ÇÑ¹ø ²¨³¾ batch size, Dropout¿¡¼­ Àû¿ëÇÒ »ýÁ¸·üÀ» Á¤ÇØ ÁÖ¾ú´Ù.
+í•™ìŠµë¥ , í•™ìŠµí•  Epoch ìˆ˜, í•œë²ˆ êº¼ë‚¼ batch size, Dropoutì—ì„œ ì ìš©í•  ìƒì¡´ë¥ ì„ ì •í•´ ì£¼ì—ˆë‹¤.
 
-ÀÌÁ¦ X µ¥ÀÌÅÍ¸¦ °¡Á®¿Í¼­, CNN ³×Æ®¿öÅ© ¾È¿¡ µé¾î°¥ ¼ö ÀÖ´Â 4Â÷¿ø µ¥ÀÌÅÍ ÇüÅÂ·Î ¸¸µé¾îÁØ´Ù. ±× °úÁ¤¿¡¼­ `tf.reshape()` ¸Þ¼Òµå¸¦ È°¿ëÇÑ´Ù. Y µ¥ÀÌÅÍ´Â ¿ø·¡´ë·Î °¡Á®¿Â´Ù. one-hot vectorÀÌ±â ¶§¹®¿¡ »ó°ü¾ø´Ù.
+ì´ì œ X ë°ì´í„°ë¥¼ ê°€ì ¸ì™€ì„œ, CNN ë„¤íŠ¸ì›Œí¬ ì•ˆì— ë“¤ì–´ê°ˆ ìˆ˜ ìžˆëŠ” 4ì°¨ì› ë°ì´í„° í˜•íƒœë¡œ ë§Œë“¤ì–´ì¤€ë‹¤. ê·¸ ê³¼ì •ì—ì„œ `tf.reshape()` ë©”ì†Œë“œë¥¼ í™œìš©í•œë‹¤. Y ë°ì´í„°ëŠ” ì›ëž˜ëŒ€ë¡œ ê°€ì ¸ì˜¨ë‹¤. one-hot vectorì´ê¸° ë•Œë¬¸ì— ìƒê´€ì—†ë‹¤.
 
 ```
 X = tf.placeholder(tf.float32)
@@ -36,46 +36,46 @@ X_img = tf.reshape(X, [-1, 28, 28, 1])    # Make 4-dimensional image
 Y = tf.placeholder(tf.float32)
 ```
 
-28 * 28ÀÇ 1Â÷¿ø ÀÌ¹ÌÁöÀÎ MNIST µ¥ÀÌÅÍ¸¦ (1 x 28 x 28) Å©±âÀÇ 4Â÷¿ø µ¥ÀÌÅÍ·Î ¹Ù²Ù¾îÁÖ°í ÀÖ´Ù. ÇÐ½À¿¡ µé¾î°¡´Â ¸ðµç µ¥ÀÌÅÍ´Â Àú ÇüÅÂ·Î ³×Æ®¿öÅ©¿¡ ÀÔ·ÂµÈ´Ù.
+28 * 28ì˜ 1ì°¨ì› ì´ë¯¸ì§€ì¸ MNIST ë°ì´í„°ë¥¼ (1 x 28 x 28) í¬ê¸°ì˜ 4ì°¨ì› ë°ì´í„°ë¡œ ë°”ê¾¸ì–´ì£¼ê³  ìžˆë‹¤. í•™ìŠµì— ë“¤ì–´ê°€ëŠ” ëª¨ë“  ë°ì´í„°ëŠ” ì € í˜•íƒœë¡œ ë„¤íŠ¸ì›Œí¬ì— ìž…ë ¥ëœë‹¤.
 
-ÀÌÁ¦ ½ÇÁ¦ ½Å°æ¸ÁÀ» ±¸ÇöÇÒ Â÷·ÊÀÌ´Ù. È÷µç ·¹ÀÌ¾î¸¦ ÇÏ³ª ±¸ÇöÇÏ¸é, ³ª¸ÓÁö ·¹ÀÌ¾î´Â ÅÙ¼­ÀÇ Å©±â¸¦ Á¦¿ÜÇÏ°í ÄÚµå°¡ µ¿ÀÏÇÏ¹Ç·Î ÇÑ ·¹ÀÌ¾îÀÇ ¸ð¾çÀ» ÀÚ¼¼È÷ »ìÆìº¸ÀÚ.
+ì´ì œ ì‹¤ì œ ì‹ ê²½ë§ì„ êµ¬í˜„í•  ì°¨ë¡€ì´ë‹¤. ížˆë“  ë ˆì´ì–´ë¥¼ í•˜ë‚˜ êµ¬í˜„í•˜ë©´, ë‚˜ë¨¸ì§€ ë ˆì´ì–´ëŠ” í…ì„œì˜ í¬ê¸°ë¥¼ ì œì™¸í•˜ê³  ì½”ë“œê°€ ë™ì¼í•˜ë¯€ë¡œ í•œ ë ˆì´ì–´ì˜ ëª¨ì–‘ì„ ìžì„¸ížˆ ì‚´íŽ´ë³´ìž.
 
-Ã¹ ¹øÂ° È÷µç ·¹ÀÌ¾î¿¡¼­, ÇÊÅÍ´Â (3 x 3) Å©±â¸¦ »ç¿ëÇÒ °ÍÀÌ°í, stride´Â (1 x 1 x 1)·Î ¿òÁ÷ÀÏ °ÍÀÌ´Ù. ±×¸®°í Ãâ·Â µ¥ÀÌÅÍ¸¦ 4Â÷¿øÀ¸·Î ¸¸µé¾îÁÖ±â À§ÇØ¼­ °°Àº Å©±âÀÇ ÇÊÅÍ¸¦ 32°³ »ç¿ëÇÒ °ÍÀÌ´Ù. ÇÊÅÍ¸¦ ±×·¸°Ô ¸¸µé¾îÁØ´Ù.
+ì²« ë²ˆì§¸ ížˆë“  ë ˆì´ì–´ì—ì„œ, í•„í„°ëŠ” (3 x 3) í¬ê¸°ë¥¼ ì‚¬ìš©í•  ê²ƒì´ê³ , strideëŠ” (1 x 1 x 1)ë¡œ ì›€ì§ì¼ ê²ƒì´ë‹¤. ê·¸ë¦¬ê³  ì¶œë ¥ ë°ì´í„°ë¥¼ 4ì°¨ì›ìœ¼ë¡œ ë§Œë“¤ì–´ì£¼ê¸° ìœ„í•´ì„œ ê°™ì€ í¬ê¸°ì˜ í•„í„°ë¥¼ 32ê°œ ì‚¬ìš©í•  ê²ƒì´ë‹¤. í•„í„°ë¥¼ ê·¸ë ‡ê²Œ ë§Œë“¤ì–´ì¤€ë‹¤.
 
 ```
 W1 = tf.Variable(tf.random_normal([3, 3, 1, 32], stddev=0.01))          # 32 filters of [1, 3, 3]
 ```
 
-ÀÌ ÇÊÅÍ¸¦ ÀÌ¿ëÇÏ¿© ÀÔ·Â X µ¥ÀÌÅÍ¿¡ ÄÁ¹ú·ç¼Ç ¿¬»êÀ» ÁøÇàÇÑ´Ù. ÄÁ¹ú·ç¼Ç ¿¬»êÀº `tf.nn.conv2d()` ÇÔ¼ö¸¦ ÀÌ¿ëÇÏ¿© ÁøÇàÇÑ´Ù.
+ì´ í•„í„°ë¥¼ ì´ìš©í•˜ì—¬ ìž…ë ¥ X ë°ì´í„°ì— ì»¨ë²Œë£¨ì…˜ ì—°ì‚°ì„ ì§„í–‰í•œë‹¤. ì»¨ë²Œë£¨ì…˜ ì—°ì‚°ì€ `tf.nn.conv2d()` í•¨ìˆ˜ë¥¼ ì´ìš©í•˜ì—¬ ì§„í–‰í•œë‹¤.
 
 ```
 Layer1 = tf.nn.conv2d(X_img, W1, strides=[1, 1, 1, 1], padding='SAME')  # Convolution with [1, 1] strides
 ```
 
-4Â÷¿ø ÇüÅÂ·Î ¸¸µç ÀÔ·Â µ¥ÀÌÅÍÀÎ `X_img`¿Í ÇÊÅÍ¸¦ (1 x 1 x 1)ÀÇ stride·Î ÄÁº¼·ç¼Ç ¿¬»êÀ» ÁøÇàÇÑ´Ù. ±×¸®°í paddingÀ» ÁøÇàÇÏ´Âµ¥, ¿©±â¼­´Â ¿ì¸®°¡ Á÷Á¢ ÆÐµùÀÇ Å©±â¸¦ Á¤ÇØÁÖÁö ¾Ê°í, Tensorflow¿¡°Ô ¸Ã±â°í ÀÖ´Ù. `padding='SAME'`Àº, ÄÁº¼·ç¼Ç ¿¬»êÀÇ Ãâ·ÂÀÌ ±× ÀÌÀü°ú ¸ð¾çÀÌ µ¿ÀÏÇÏµµ·Ï ÆÐµùÇØ´Þ¶ó°í ¿äÃ»ÇÑ´Ù. MNISTÀÇ ÀÔ·Â µ¥ÀÌÅÍ°¡ (28 x 28) Å©±âÀÌ¹Ç·Î, `padding='SAME'`À» Àû¿ëÇÏ¸é ÄÁº¼·ç¼Ç ¿¬»ê ÈÄ ÆÐµùÀ» ¾º¿î Ãâ·Â Æ¯Â¡ ¸ÊÀÇ Å©±âµµ (28 x 28)ÀÌ µÈ´Ù.
+4ì°¨ì› í˜•íƒœë¡œ ë§Œë“  ìž…ë ¥ ë°ì´í„°ì¸ `X_img`ì™€ í•„í„°ë¥¼ (1 x 1 x 1)ì˜ strideë¡œ ì»¨ë³¼ë£¨ì…˜ ì—°ì‚°ì„ ì§„í–‰í•œë‹¤. ê·¸ë¦¬ê³  paddingì„ ì§„í–‰í•˜ëŠ”ë°, ì—¬ê¸°ì„œëŠ” ìš°ë¦¬ê°€ ì§ì ‘ íŒ¨ë”©ì˜ í¬ê¸°ë¥¼ ì •í•´ì£¼ì§€ ì•Šê³ , Tensorflowì—ê²Œ ë§¡ê¸°ê³  ìžˆë‹¤. `padding='SAME'`ì€, ì»¨ë³¼ë£¨ì…˜ ì—°ì‚°ì˜ ì¶œë ¥ì´ ê·¸ ì´ì „ê³¼ ëª¨ì–‘ì´ ë™ì¼í•˜ë„ë¡ íŒ¨ë”©í•´ë‹¬ë¼ê³  ìš”ì²­í•œë‹¤. MNISTì˜ ìž…ë ¥ ë°ì´í„°ê°€ (28 x 28) í¬ê¸°ì´ë¯€ë¡œ, `padding='SAME'`ì„ ì ìš©í•˜ë©´ ì»¨ë³¼ë£¨ì…˜ ì—°ì‚° í›„ íŒ¨ë”©ì„ ì”Œìš´ ì¶œë ¥ íŠ¹ì§• ë§µì˜ í¬ê¸°ë„ (28 x 28)ì´ ëœë‹¤.
 
-¿ì¸®´Â ÀÌ°É ÀÌ¿ëÇØ ÅÙ¼­ÇÃ·Î¿ì°¡ ¸î Å©±âÀÇ ÆÐµùÀ» Àû¿ëÇÏ°í ÀÖ´ÂÁö °è»êÇÒ ¼ö ÀÖ´Ù. ÆÐµùÀÇ Å©±â¸¦ ![](https://latex.codecogs.com/gif.latex?x)·Î ³õ°í, [ÀÌÀü ±Û](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/29_CNN4.md)¿¡¼­ ¾Ë¾Æº¸¾Ò´ø Ãâ·Â Æ¯Â¡ ¸Ê Å©±â °è»ê ½Ä¿¡ Áý¾î³Ö¾î¼­ ÆÐµùÀÇ Å©±â¸¦ ±¸ÇÒ ¼ö ÀÖ´Ù.
+ìš°ë¦¬ëŠ” ì´ê±¸ ì´ìš©í•´ í…ì„œí”Œë¡œìš°ê°€ ëª‡ í¬ê¸°ì˜ íŒ¨ë”©ì„ ì ìš©í•˜ê³  ìžˆëŠ”ì§€ ê³„ì‚°í•  ìˆ˜ ìžˆë‹¤. íŒ¨ë”©ì˜ í¬ê¸°ë¥¼ ![](https://latex.codecogs.com/gif.latex?x)ë¡œ ë†“ê³ , [ì´ì „ ê¸€](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/29_CNN4.md)ì—ì„œ ì•Œì•„ë³´ì•˜ë˜ ì¶œë ¥ íŠ¹ì§• ë§µ í¬ê¸° ê³„ì‚° ì‹ì— ì§‘ì–´ë„£ì–´ì„œ íŒ¨ë”©ì˜ í¬ê¸°ë¥¼ êµ¬í•  ìˆ˜ ìžˆë‹¤.
 
-![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B28%20&plus;%202x%20-%203%7D%7B1%7D%20&plus;%201%20%3D%2028) ÀÌ¹Ç·Î,  ![](https://latex.codecogs.com/gif.latex?x%20%3D%201)ÀÌ´Ù. µû¶ó¼­ ÅÙ¼­ÇÃ·Î¿ì°¡ Àû¿ëÇØÁÖ´Â ÆÐµùÀÇ Å©±â´Â 1ÀÌ¶ó´Â °ÍÀ» ¾Ë ¼ö ÀÖ´Ù.
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B28%20&plus;%202x%20-%203%7D%7B1%7D%20&plus;%201%20%3D%2028) ì´ë¯€ë¡œ,  ![](https://latex.codecogs.com/gif.latex?x%20%3D%201)ì´ë‹¤. ë”°ë¼ì„œ í…ì„œí”Œë¡œìš°ê°€ ì ìš©í•´ì£¼ëŠ” íŒ¨ë”©ì˜ í¬ê¸°ëŠ” 1ì´ë¼ëŠ” ê²ƒì„ ì•Œ ìˆ˜ ìžˆë‹¤.
 
-±× ÈÄ È°¼ºÈ­ ÇÔ¼ö·Î ReLU¸¦ Àû¿ëÇØÁØ´Ù.
+ê·¸ í›„ í™œì„±í™” í•¨ìˆ˜ë¡œ ReLUë¥¼ ì ìš©í•´ì¤€ë‹¤.
 
 ```
 Layer1 = tf.nn.relu(Layer1)
 ```
 
-±×¸®°í ÀÌ¹ÌÁöÀÇ Å©±â¸¦ ÁÙÀÌ±â À§ÇØ, Max PoolingÀ» ÁøÇàÇÑ´Ù. ÅÙ¼­ÇÃ·Î¿ì¿¡¼­ Max PoolingÀº `tf.nn.max_pool()` ÇÔ¼ö¸¦ ÀÌ¿ëÇØ ¼öÇàÇÒ ¼ö ÀÖ´Ù.
+ê·¸ë¦¬ê³  ì´ë¯¸ì§€ì˜ í¬ê¸°ë¥¼ ì¤„ì´ê¸° ìœ„í•´, Max Poolingì„ ì§„í–‰í•œë‹¤. í…ì„œí”Œë¡œìš°ì—ì„œ Max Poolingì€ `tf.nn.max_pool()` í•¨ìˆ˜ë¥¼ ì´ìš©í•´ ìˆ˜í–‰í•  ìˆ˜ ìžˆë‹¤.
 
 ```
 # Max pooling with [2, 2] size and [2, 2] strides
 Layer1 = tf.nn.max_pool(Layer1, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 ```
 
-(2 x 2) »çÀÌÁîÀÇ Ä¿³Î Å©±â·Î, (2 x 2) stride·Î ¿òÁ÷ÀÌ¸é¼­ Max PoolingÀ» Àû¿ëÇÏ°í ÀÖ´Ù. µû¶ó¼­ Ç®¸µ ÈÄ Ãâ·Â Æ¯Â¡ ¸ÊÀÇ Å©±â´Â (14 x 14)°¡ µÈ´Ù.
+(2 x 2) ì‚¬ì´ì¦ˆì˜ ì»¤ë„ í¬ê¸°ë¡œ, (2 x 2) strideë¡œ ì›€ì§ì´ë©´ì„œ Max Poolingì„ ì ìš©í•˜ê³  ìžˆë‹¤. ë”°ë¼ì„œ í’€ë§ í›„ ì¶œë ¥ íŠ¹ì§• ë§µì˜ í¬ê¸°ëŠ” (14 x 14)ê°€ ëœë‹¤.
 
-ÀÌ·¸°Ô ¸Å ·¹ÀÌ¾î¸¶´Ù Ãâ·Â Æ¯Â¡ ¸ÊÀÇ ¸ð¾çÀ» ±â¾ïÇØµÎ¾î¾ß ÇÑ´Ù. ±×·¡¾ß Fully Connected LayerÀÇ ¸ð¾çÀ» Á¤ÇÒ ¼ö ÀÖ±â ¶§¹®ÀÌ´Ù.
+ì´ë ‡ê²Œ ë§¤ ë ˆì´ì–´ë§ˆë‹¤ ì¶œë ¥ íŠ¹ì§• ë§µì˜ ëª¨ì–‘ì„ ê¸°ì–µí•´ë‘ì–´ì•¼ í•œë‹¤. ê·¸ëž˜ì•¼ Fully Connected Layerì˜ ëª¨ì–‘ì„ ì •í•  ìˆ˜ ìžˆê¸° ë•Œë¬¸ì´ë‹¤.
 
-Ç®¸µÀÌ ³¡³­ °á°ú¸¦ ´ÙÀ½ È÷µç ·¹ÀÌ¾î¿¡ ÀÔ·ÂÇÏ°í, ±× °á°ú¸¦ ´ÙÀ½ È÷µç ·¹ÀÌ¾î¿¡ ÀÔ·ÂÇÏ°í... ÇÏ¸é¼­ ÀÌ¹ÌÁöÀÇ Å©±â´Â ÁÙ¿© ³ª°¡°í °¹¼ö´Â ´Ã·Á ³ª°£´Ù. ±×·¸°Ô 2¹øÂ° È÷µç ·¹ÀÌ¾î¿Í 3¹øÂ° È÷µç ·¹ÀÌ¾î¸¦ ½×¾Æ º¸ÀÚ.
+í’€ë§ì´ ëë‚œ ê²°ê³¼ë¥¼ ë‹¤ìŒ ížˆë“  ë ˆì´ì–´ì— ìž…ë ¥í•˜ê³ , ê·¸ ê²°ê³¼ë¥¼ ë‹¤ìŒ ížˆë“  ë ˆì´ì–´ì— ìž…ë ¥í•˜ê³ ... í•˜ë©´ì„œ ì´ë¯¸ì§€ì˜ í¬ê¸°ëŠ” ì¤„ì—¬ ë‚˜ê°€ê³  ê°¯ìˆ˜ëŠ” ëŠ˜ë ¤ ë‚˜ê°„ë‹¤. ê·¸ë ‡ê²Œ 2ë²ˆì§¸ ížˆë“  ë ˆì´ì–´ì™€ 3ë²ˆì§¸ ížˆë“  ë ˆì´ì–´ë¥¼ ìŒ“ì•„ ë³´ìž.
 
 ```
 W2 = tf.Variable(tf.random_normal([3, 3, 32, 64], stddev=0.01))         # 64 filters of [32, 3, 3]
@@ -89,17 +89,17 @@ Layer3 = tf.nn.relu(Layer3)
 Layer3 = tf.nn.max_pool(Layer3, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 ```
 
-Ã¹ ¹øÂ° È÷µç ·¹ÀÌ¾î°¡ 32°³ÀÇ ÇÊÅÍ¸¦ »ç¿ëÇÏ¿© (32 x 3 x 3)ÀÇ Ãâ·ÂÀ» ³» ³õ¾ÒÀ¸¹Ç·Î, µÎ¹øÂ° È÷µç ·¹ÀÌ¾î¿¡¼­´Â (32, 3, 3) Å©±âÀÇ ÇÊÅÍ¸¦ Àû¿ëÇØÁÖ¾î¾ß ÇÑ´Ù. ±×¸®°í ÀÌ¹ø¿¡´Â Ãâ·ÂÀ» 64ÀåÀ¸·Î ¸¸µé°í ÀÖ´Ù. Ã¹ ¹øÂ° È÷µç ·¹ÀÌ¾îÀÇ Ãâ·Â Æ¯Â¡ ¸ÊÀÇ Å©±â´Â (64, 7, 7)ÀÌ µÈ´Ù.
+ì²« ë²ˆì§¸ ížˆë“  ë ˆì´ì–´ê°€ 32ê°œì˜ í•„í„°ë¥¼ ì‚¬ìš©í•˜ì—¬ (32 x 3 x 3)ì˜ ì¶œë ¥ì„ ë‚´ ë†“ì•˜ìœ¼ë¯€ë¡œ, ë‘ë²ˆì§¸ ížˆë“  ë ˆì´ì–´ì—ì„œëŠ” (32, 3, 3) í¬ê¸°ì˜ í•„í„°ë¥¼ ì ìš©í•´ì£¼ì–´ì•¼ í•œë‹¤. ê·¸ë¦¬ê³  ì´ë²ˆì—ëŠ” ì¶œë ¥ì„ 64ìž¥ìœ¼ë¡œ ë§Œë“¤ê³  ìžˆë‹¤. ì²« ë²ˆì§¸ ížˆë“  ë ˆì´ì–´ì˜ ì¶œë ¥ íŠ¹ì§• ë§µì˜ í¬ê¸°ëŠ” (64, 7, 7)ì´ ëœë‹¤.
 
-¼¼ ¹øÂ° È÷µç ·¹ÀÌ¾îµµ µ¿ÀÏÇÏ´Ù. (64, 3, 3) Å©±âÀÇ ÇÊÅÍ¸¦ Àû¿ëÇØ¼­ (128, 4, 4) ¸ð¾çÀÇ Ãâ·Â Æ¯Â¡ ¸ÊÀ» »ý¼ºÇÏ°í ÀÖ´Ù.
+ì„¸ ë²ˆì§¸ ížˆë“  ë ˆì´ì–´ë„ ë™ì¼í•˜ë‹¤. (64, 3, 3) í¬ê¸°ì˜ í•„í„°ë¥¼ ì ìš©í•´ì„œ (128, 4, 4) ëª¨ì–‘ì˜ ì¶œë ¥ íŠ¹ì§• ë§µì„ ìƒì„±í•˜ê³  ìžˆë‹¤.
 
-±×¸®°í ¼¼ ¹øÂ° È÷µç ·¹ÀÌ¾îÀÇ Ãâ·Â Æ¯Â¡ ¸ÊÀº 1Â÷¿øÀ¸·Î ÆìÁ®¼­ Fully-Connected Layer¿¡ µé¾î°¡°Ô µÈ´Ù. 1Â÷¿øÀ¸·Î Æì´Â ÀÛ¾÷µµ `tf.reshape()` ÇÔ¼ö¸¦ ÀÌ¿ëÇÑ´Ù.
+ê·¸ë¦¬ê³  ì„¸ ë²ˆì§¸ ížˆë“  ë ˆì´ì–´ì˜ ì¶œë ¥ íŠ¹ì§• ë§µì€ 1ì°¨ì›ìœ¼ë¡œ íŽ´ì ¸ì„œ Fully-Connected Layerì— ë“¤ì–´ê°€ê²Œ ëœë‹¤. 1ì°¨ì›ìœ¼ë¡œ íŽ´ëŠ” ìž‘ì—…ë„ `tf.reshape()` í•¨ìˆ˜ë¥¼ ì´ìš©í•œë‹¤.
 
 ```
 Layer3_flat = tf.reshape(Layer3, [-1, 4 * 4 * 128])    # flat the output feature map to [1,  4 * 4 * 128] size
 ```
 
-(128, 4, 4) ¸ð¾çÀÇ Ãâ·Â Æ¯Â¡ ¸ÊÀ» 1Â÷¿øÀ¸·Î ÆìÁÖ¾ú´Ù. ±×¸®°í ÀÌ°ÍÀ» ±×´ë·Î Fully-Connected Layer¿¡ ³Ö¾îÁÖ°Ô µÈ´Ù. ´ÙÀ½°ú °°ÀÌ ¸»ÀÌ´Ù.
+(128, 4, 4) ëª¨ì–‘ì˜ ì¶œë ¥ íŠ¹ì§• ë§µì„ 1ì°¨ì›ìœ¼ë¡œ íŽ´ì£¼ì—ˆë‹¤. ê·¸ë¦¬ê³  ì´ê²ƒì„ ê·¸ëŒ€ë¡œ Fully-Connected Layerì— ë„£ì–´ì£¼ê²Œ ëœë‹¤. ë‹¤ìŒê³¼ ê°™ì´ ë§ì´ë‹¤.
 
 ```
 W4 = tf.get_variable("W4", shape=[4*4*128, 625], initializer=tf.contrib.layers.xavier_initializer())   # Fully Connected Layer
@@ -109,9 +109,9 @@ Layer4 = tf.nn.relu(Layer4)
 Layer4 = tf.nn.dropout(Layer4, keep_prob=keep_prob)
 ```
 
-Xavier Initializer¸¦ »ç¿ëÇØ¼­ Weight¸¦ »ý¼ºÇØÁÖ°í, Ãâ·ÂÀÇ Å©±â°¡ ÁÙ¾îµç ¸¸Å­ bias¸¦ ¼³Á¤ÇÏ°í ÀÖ´Ù. ¿¬»êÀº ÀÏ¹Ý Affine °èÃþÃ³·³ ±¸ÇöÇÑ ÈÄ, ReLU È°¼ºÈ­ ÇÔ¼ö¿Í DropoutÀ» Àû¿ëÇØÁÖ°í ÀÖ´Ù. Fully-Connected Layer¿¡¼­ OverfittingÀÌ °¡Àå Àß ÀÏ¾î³ª¹Ç·Î, ¿©±â¿¡¼­ »ç¿ëµÈ DropoutÀº ²Ï³ª È¿°úÀûÀÏ °ÍÀ¸·Î ±â´ëµÈ´Ù. `keep_prob`ÀÇ °ªÀº 0.7À¸·Î ¾Õ¿¡¼­ ¼³Á¤ÇØÁØ ¹Ù ÀÖ´Ù.
+Xavier Initializerë¥¼ ì‚¬ìš©í•´ì„œ Weightë¥¼ ìƒì„±í•´ì£¼ê³ , ì¶œë ¥ì˜ í¬ê¸°ê°€ ì¤„ì–´ë“  ë§Œí¼ biasë¥¼ ì„¤ì •í•˜ê³  ìžˆë‹¤. ì—°ì‚°ì€ ì¼ë°˜ Affine ê³„ì¸µì²˜ëŸ¼ êµ¬í˜„í•œ í›„, ReLU í™œì„±í™” í•¨ìˆ˜ì™€ Dropoutì„ ì ìš©í•´ì£¼ê³  ìžˆë‹¤. Fully-Connected Layerì—ì„œ Overfittingì´ ê°€ìž¥ ìž˜ ì¼ì–´ë‚˜ë¯€ë¡œ, ì—¬ê¸°ì—ì„œ ì‚¬ìš©ëœ Dropoutì€ ê½¤ë‚˜ íš¨ê³¼ì ì¼ ê²ƒìœ¼ë¡œ ê¸°ëŒ€ëœë‹¤. `keep_prob`ì˜ ê°’ì€ 0.7ìœ¼ë¡œ ì•žì—ì„œ ì„¤ì •í•´ì¤€ ë°” ìžˆë‹¤.
 
-±×¸®°í 2¹øÂ° Fully-Connected Layer¿¡¼­ µåµð¾î 10°³ÀÇ Ãâ·Â º¤ÅÍ¸¦ ¸¸µé¾î³½´Ù.
+ê·¸ë¦¬ê³  2ë²ˆì§¸ Fully-Connected Layerì—ì„œ ë“œë””ì–´ 10ê°œì˜ ì¶œë ¥ ë²¡í„°ë¥¼ ë§Œë“¤ì–´ë‚¸ë‹¤.
 
 ```
 W5 = tf.get_variable("W5", shape=[625, 10], initializer=tf.contrib.layers.xavier_initializer())    # Fully Connected Layer
@@ -120,15 +120,15 @@ b5 = tf.Variable(tf.random_normal([10]))
 logits = tf.matmul(Layer4, W5) + b5    # Logits function
 ```
 
-10ÀÇ ±æÀÌ¸¦ °¡Áø Ãâ·Â º¤ÅÍ¸¦ ¸¸µé°í, °¡¼³ ÇÔ¼ö¸¦ ¸¸µé¾îÁÖ¾ú´Ù. ÀÌÁ¦ ÀÌ °¡¼³À» ÀÌ¿ëÇÏ¿© cost ÇÔ¼ö¸¦ Á¤ÀÇÇÏ°í AdamOptimizer¸¦ ÀÌ¿ëÇÏ¿© Æ®·¹ÀÌ´×¸¸ µ¹¸®¸é µÈ´Ù.
+10ì˜ ê¸¸ì´ë¥¼ ê°€ì§„ ì¶œë ¥ ë²¡í„°ë¥¼ ë§Œë“¤ê³ , ê°€ì„¤ í•¨ìˆ˜ë¥¼ ë§Œë“¤ì–´ì£¼ì—ˆë‹¤. ì´ì œ ì´ ê°€ì„¤ì„ ì´ìš©í•˜ì—¬ cost í•¨ìˆ˜ë¥¼ ì •ì˜í•˜ê³  AdamOptimizerë¥¼ ì´ìš©í•˜ì—¬ íŠ¸ë ˆì´ë‹ë§Œ ëŒë¦¬ë©´ ëœë‹¤.
 
 ```
 cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=Y))    # Softmax cost
 trainer = tf.train.AdamOptimizer(0.001).minimize(cost)    # Use Adam optimizer
 ```
 
-ÀÌ ±Û¿¡¼­´Â ¸ðµ¨ÀÇ ¸ð¾ç°ú CNNÀÇ ±¸Çö¹ý¿¡ ÁßÁ¡À» µÎ¾úÀ¸¹Ç·Î, ½ÇÁ¦ ÇÐ½ÀÇÏ´Â ºÎºÐÀº Àû¾î³õÁö ¾Ê°Ú´Ù. ±× ´ë½Å ÄÚµå¸¦ [ÀÌ °÷]()¿¡ °øÀ¯ÇÏ°Ú´Ù.
+ì´ ê¸€ì—ì„œëŠ” ëª¨ë¸ì˜ ëª¨ì–‘ê³¼ CNNì˜ êµ¬í˜„ë²•ì— ì¤‘ì ì„ ë‘ì—ˆìœ¼ë¯€ë¡œ, ì‹¤ì œ í•™ìŠµí•˜ëŠ” ë¶€ë¶„ì€ ì ì–´ë†“ì§€ ì•Šê² ë‹¤. ê·¸ ëŒ€ì‹  ì½”ë“œë¥¼ [ì´ ê³³]()ì— ê³µìœ í•˜ê² ë‹¤.
 
-Á¤È®µµ´Â 99.38%·Î ¿À·ùÀ²ÀÌ µåµð¾î 1% ÀÌÇÏ·Î ¶³¾îÁø °ÍÀ» º¼ ¼ö ÀÖ¾ú´Ù. CNNÀÌ ÀÌ¹ÌÁöÀÇ Æ¯¼ºÀ» ÀÌÇØÇÏ´Â ¼ºÁúÀ» °¡Áö°í ÀÖ±â ¶§¹®¿¡ ÀÌÁ¤µµ Á¤È®µµ°¡ ³ª¿Â °Í °°´Ù.
+ì •í™•ë„ëŠ” 99.38%ë¡œ ì˜¤ë¥˜ìœ¨ì´ ë“œë””ì–´ 1% ì´í•˜ë¡œ ë–¨ì–´ì§„ ê²ƒì„ ë³¼ ìˆ˜ ìžˆì—ˆë‹¤. CNNì´ ì´ë¯¸ì§€ì˜ íŠ¹ì„±ì„ ì´í•´í•˜ëŠ” ì„±ì§ˆì„ ê°€ì§€ê³  ìžˆê¸° ë•Œë¬¸ì— ì´ì •ë„ ì •í™•ë„ê°€ ë‚˜ì˜¨ ê²ƒ ê°™ë‹¤.
 
-![](../image/CNN52.png)
+![](../image/CNN52.PNG)
