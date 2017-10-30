@@ -68,3 +68,5 @@ Tensorflow 실습을 위한 내용과 스터디 참고 자료로, 김성훈 교�
 [28. CNN - Zero Padding, Pooling Layer](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/28_CNN3.md)
 
 [29. CNN - 합성곱 계층 2](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/29_CNN4.md)
+
+[30. CNN - MNIST 분류 구현](https://github.com/MagmaTart/DeepLearningStudy/blob/master/Soomin/summarys/30_CNN_MNIST.md)
